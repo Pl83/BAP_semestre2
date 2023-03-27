@@ -4,55 +4,95 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>map commerce</title>
+  <link rel="stylesheet" href="map.css">
+  
+  <title>Map commerce</title>
 </head>
 <body>
-  <header><p>Ici ton header</p></header>
-  <main>
-    <div id="MapCage">
-      <iframe id="map"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10510.300713207156!2d2.182196195119224!3d48.80908609994353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67b842cd216db%3A0x550be965d3149c70!2s92370%20Chaville!5e0!3m2!1sfr!2sfr!4v1678354994675!5m2!1sfr!2sfr" 
-      width="600" 
-      height="450" 
-      style="border:0;" 
-      allowfullscreen="" 
-      loading="lazy" 
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-    <button id="btn">
-      here
-    </button>
-    <ul>
-      <button class="mapbtn" id="1">Pharmacie</button>
-      <button class="mapbtn" id="2">Boulangerie</button>
-      <button class="mapbtn" id="3">Ecole</button>
-      <button class="mapbtn" id="4">Parc</button>
-    </ul>
+  <div id="loader"></div>
+<div id="content" style="display:none;">
+  <header id="header">
+    <img id="logo" src="img/logo.svg" alt="logo">
+    <nav id="nav">
+      <a href="#">Accueil</a>
+      <a href="#">Map</a>
+      <a href="#">Integration</a>
+    </nav>
+    <div id="bur">
+      <span id="span_one"></span>
+      <span id="span_two"></span>
+      <span id="span_three"></span>
     </div>
-    <p>Bonjour je suis moi même</p>
+  </header>
+  <main>
+    <section id="sone">
+      <h1>Explorez Chatville</h1>
+      <p>Chaville est une ville idéale pour les amoureux de la nature et les amateurs de promenades en plein air.<br> 
+        Venez découvrir tout ce que Chaville a à offrir et profitez de ses nombreux espaces verts pour vous ressourcer et vous détendre.</p>
+      <button>Contactez nous</button>
+    </section>
+    <section id="stwo">
+
+      <div id="done">
+        <div id="link">
+          <div class="catego"><h2 class="pharmabtn">Pharmacie ➜</h2><!--<img id="vector" src="img/Vector.png" alt="down">--></div>
+          <p id="1" class="mapbtn pharma">Pharmacie Principale</p>
+          <p id="2" class="mapbtn pharma">Pharmacie des Créneaux</p>
+          <p id="3" class="mapbtn pharma">Pharmacie de la Pointe</p>
+          <p id="4" class="mapbtn pharma">Pharmacie des Ecoles</p>
+          
+          <div class="catego"><h2 class="boulbtn">Boulengerie ➜</h2></div>
+          <p id="5" class="mapbtn boul">Olivier Le Boulanger</p>
+          <p id="6" class="mapbtn boul">À la Pointe de Chaville</p>
+          <p id="7" class="mapbtn boul">Boulangerie - Pâtisserie Maison Perrier</p>
+          <p id="8" class="mapbtn boul">La Gache</p>
+
+          <div class="catego"><h2 class="boubtn">Boucherie ➜</h2></div>
+          <p id="9" class="mapbtn bou">Boucherie - Charcuterie - Traiteur</p>
+          <p id="10" class="mapbtn bou">Boucherie - Charcuterie - Traiteur</p>
+          <p id="11" class="mapbtn bou">Boucherie - Charcuterie - Traiteur</p>
+          <p id="12" class="mapbtn bou">Boucherie - Charcuterie - Traiteur</p>
+
+        </div>
+        <div id="intel">
+          <div>
+            <img class="intelimg" src="img/tel.png" alt="tel">
+            <p>Numéro de téléphone :</p>
+            <p id="tel"></p>
+          </div>
+          <div>
+            <img class="intelimg" src="img/mail.png" alt="mail">
+            <div>
+              <p>Site internet :</p>
+            <p id="site"></p>
+            </div>
+          </div>
+          <div>
+            <img class="intelimg" src="img/adress.png" alt="adress">
+            <p>Localisation : </p>
+            <p id="loca"></p>
+          </div>
+        </div>
+      </div>
+
+      <div id="dtwo">
+        <div id="MapCage">
+          <iframe id="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10510.300713207156!2d2.182196195119224!3d48.80908609994353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67b842cd216db%3A0x550be965d3149c70!2s92370%20Chaville!5e0!3m2!1sfr!2sfr!4v1678354994675!5m2!1sfr!2sfr" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        
+      </div>
+    </section>
   </main>
-  <footer>Ici ton footer</footer>
-  <script>
-    document.getElementById("btn").addEventListener('click', change)
-    function change(){
-      document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.76457551759!2d2.2769955921557585!3d48.858946580659975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis!5e0!3m2!1sfr!2sfr!4v1678355608105!5m2!1sfr!2sfr";
-    }
-
-    const maplink = {
-      /*Pharmacie*/ 1 : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10510.295150260212!2d2.1730121392479345!3d48.80911263968417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67b89dda96f07%3A0x4a9fdd76d0141846!2sPharmacie%20de%20la%20Pointe!5e0!3m2!1sfr!2sfr!4v1678356310258!5m2!1sfr!2sfr", 
-      /*Boulengerie*/ 2 : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10510.266224473206!2d2.1730121346632285!3d48.80925063882914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67b861fa67b2d%3A0xf8d67839cb9d9001!2sOlivier%20Le%20Boulanger!5e0!3m2!1sfr!2sfr!4v1678356556303!5m2!1sfr!2sfr", 
-      /*Ecole*/ 3 : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10510.283579942983!2d2.173012137414052!3d48.809167839388564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67b9d3f013991%3A0xdadb243f6460d5db!2s%C3%89cole%20%C3%A9l%C3%A9mentaire%20Ferdinand%20Buisson!5e0!3m2!1sfr!2sfr!4v1678356418710!5m2!1sfr!2sfr", 
-      /*Parc*/ 4 : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10510.277794785585!2d2.173012136497111!3d48.80919543921757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67b88e1fcf735%3A0x38e6ac4a4481f655!2sParc%20Fran%C3%A7ois%20Mitterrand!5e0!3m2!1sfr!2sfr!4v1678356454729!5m2!1sfr!2sfr"
-    };
-
-    const mapbtn = document.querySelectorAll(".mapbtn");
-    mapbtn.forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.getElementById("map").src = maplink[btn.id];
-      })
-    })
-
-
-  </script>
+  <footer>Ici ton footer
+  </footer>
+</div>
+  <script src="map.js"></script>
 </body>
 </html>
