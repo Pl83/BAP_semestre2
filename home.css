@@ -176,4 +176,21 @@ footer {
   text-transform: uppercase;
 }
 
+.cont-btn {
+  background-color: rebeccapurple;
+  color: red;
+  font-size: 25px;
+  width: 50px;
+  height: 30px;
+  text-align: center;
+}
+
+.cont-btn-left {
+  transform: translate(50px, 150px);
+}
+
+.cont-btn-right {
+  transform: translate(90vw, -150px);
+}
+
 /*# sourceMappingURL=home.css.map */
