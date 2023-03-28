@@ -2,6 +2,7 @@ const contBtnRight = document.querySelector(".cont-btn-right");
 const contBtnLeft = document.querySelector(".cont-btn-left");
 let index = 0;
 
+
 contBtnLeft.addEventListener("click", () => { 
 
   console.log("left");
