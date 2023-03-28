@@ -68,3 +68,61 @@
     }
   }
 }
+#JouerAussi{
+  height: 100vh;
+  background-color: var(--light-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  #jouer{
+    img{
+      margin-left: 100px;
+    }
+  }
+  #carte{
+    justify-content: end;
+    div{
+      align-items: end;
+    }
+    img{
+      margin-right: 100px;
+    }
+  }
+  .bas{
+    height: 50%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    div{
+      height: 100%;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 30px;
+      h3{
+        font-size: xx-large;
+        font-family: "Poppins Medium";
+        font-weight: lighter;
+      }
+      p{
+        font-size: large;
+        font-family: "Kanit", sans-serif;
+      }
+      button{
+        width: 250px;
+        height: 45px;
+        border: none;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        color: var(--gold);
+        background-color: var(--dark-color);
+        font-family: "Kanit", sans-serif;
+        font-size: large;
+      }
+    }
+    img{
+      height: 150px;
+    }
+  }
+}

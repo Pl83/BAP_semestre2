@@ -67,4 +67,61 @@
   left: 50%;
 }
 
+#JouerAussi {
+  height: 100vh;
+  background-color: var(--light-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#JouerAussi #jouer img {
+  margin-left: 100px;
+}
+#JouerAussi #carte {
+  justify-content: end;
+}
+#JouerAussi #carte div {
+  align-items: end;
+}
+#JouerAussi #carte img {
+  margin-right: 100px;
+}
+#JouerAussi .bas {
+  height: 50%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+#JouerAussi .bas div {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+#JouerAussi .bas div h3 {
+  font-size: xx-large;
+  font-family: "Poppins Medium";
+  font-weight: lighter;
+}
+#JouerAussi .bas div p {
+  font-size: large;
+  font-family: "Kanit", sans-serif;
+}
+#JouerAussi .bas div button {
+  width: 250px;
+  height: 45px;
+  border: none;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  color: var(--gold);
+  background-color: var(--dark-color);
+  font-family: "Kanit", sans-serif;
+  font-size: large;
+}
+#JouerAussi .bas img {
+  height: 150px;
+}
+
 /*# sourceMappingURL=build.css.map */
