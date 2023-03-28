@@ -187,6 +187,7 @@ footer {
 
 .cont-btn-left {
   transform: translate(50px, 150px);
+  visibility: hidden;
 }
 
 .cont-btn-right {

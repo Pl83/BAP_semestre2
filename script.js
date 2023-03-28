@@ -7,6 +7,9 @@ contBtnLeft.addEventListener("click", () => {
   console.log("left");
   index--;
   console.log(index);
+   if (index == 0) {
+     contBtnLeft.style.visibility = "hidden";
+   }
   
   
 });
@@ -16,12 +19,10 @@ contBtnRight.addEventListener("click", () => {
   console.log("right");
   index++;
   console.log(index);
+  if (index != 0) {
+    contBtnLeft.style.visibility = "visible";
+  }
  
  
 });
-if (index != 0) {
-  contBtnLeft.style.display = "block";
-}else{
-  contBtnLeft.style.display = "none";
-}
 
