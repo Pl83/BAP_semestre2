@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --dark-color : #1B1B1B;
+  --gold : #D7C378;
+  --light-color : #E0E0E0;
+}
+
+
+
+#ChavilleAction{
+  height: 100vh;
+  background-color: var(--dark-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  #display{
+    width: 70%;
+    height: 100%;
+    #texte{
+      height: 40%;
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h2{
+        color: var(--gold);
+        font-family: "Poppins Medium";
+        font-weight: lighter;
+        font-size: xx-large;
+        margin-bottom: 25px;
+      }
+      p{
+        color: var(--light-color);
+        font-family: 'Kanit', sans-serif;
+        font-weight: lighter;
+        font-size: large;
+      }
+    }
+    #images{
+      height: 60%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      div{
+        width: 75%;
+        height: 100%;
+        display: flex;
+        align-items: end;
+        position: relative;
+        img{
+          width: 30%;
+          height: 80%;
+        }
+        #image2{
+          position: absolute;
+          top: 50px;
+          left: 25%;
+        }
+        #image3{
+          position: absolute;
+          top: 10px;
+          left: 50%;
+        }
+      }
+    }
+  }
+}
