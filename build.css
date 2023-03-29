@@ -5,6 +5,7 @@
   --dark-color: #1B1B1B;
   --gold: #D7C378;
   --light-color: #E0E0E0;
+  --grey: #8A8A8A;
 }
 
 #ChavilleAction {
@@ -122,6 +123,60 @@
 }
 #JouerAussi .bas img {
   height: 150px;
+}
+
+footer {
+  height: 40vh;
+  background-color: var(--dark-color);
+}
+footer #footerhaut {
+  height: 85%;
+  display: flex;
+  align-items: center;
+}
+footer #footerhaut #footergauche {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+footer #footerhaut #footergauche ul {
+  list-style: none;
+  font-size: x-large;
+  font-family: "Poppins Medium";
+  color: var(--grey);
+  margin-top: 20px;
+}
+footer #footerhaut #footergauche ul .ultitre {
+  color: var(--gold);
+}
+footer #footerhaut #footergauche ul li {
+  margin-top: 10px;
+}
+footer #footerhaut #footerdroite {
+  width: 35%;
+  height: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: normal;
+  border-left: 1px solid var(--grey);
+}
+footer #footerhaut #footerdroite p {
+  font-family: "Poppins", sans-serif;
+  font-size: 100px;
+  color: var(--gold);
+}
+footer #footerbas {
+  height: 15%;
+}
+footer #footerbas p {
+  text-align: center;
+  color: var(--gold);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: x-large;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=build.css.map */
