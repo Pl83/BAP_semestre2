@@ -5,12 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="map.css">
-  
+  <link rel="stylesheet" href="chatbot.css">
   <title>Map commerce</title>
 </head>
 <body>
   <div id="loader"></div>
 <div id="content" style="display:none;">
+  
   <header id="header">
     <img id="logo" src="img/logo.svg" alt="logo">
     <nav id="nav">
@@ -90,9 +91,30 @@
       </div>
     </section>
   </main>
-  <footer>Ici ton footer
+  <footer>
+    <h3>Chaville</h3>
+    <div class="rs">
+      <img src="img/facebook.png" alt="">
+      <img src="img/twiter.png" alt="">
+    </div>
+    
+
+    
   </footer>
 </div>
+  <button id="open-popup" class="btnbot"><img id="mydivheader" src="img/bot.png" alt=""></button>
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <button id="close-popup" class="cross"><img src="img/close.png" alt=""></button>
+      <h2>Chatbot</h2>
+
+      <div id="messages"></div>
+      <br>
+      <div class="popupbotwon"><input type="text" id="input-message" placeholder="write here">
+        <button id="btn-valider">Valider</button></div>
+    </div>
+  </div>
+  <script src="chatbot.js"></script>
   <script src="map.js"></script>
 </body>
 </html>
