@@ -1,0 +1,89 @@
+$grey-color: #9f9898;
+   $white-color: #ffffff;
+   $blue_background:  #174F90;
+   $pink-color:  #BC17681A;
+   $footer-bg-blue: #174F90;
+   $footer-input-bg: #10427B;
+   $footer-input-color: #486A90;
+   
+
+footer{
+  background-color: $footer-bg-blue;
+  width: 100vw;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+
+  div.list-infos{
+    padding: 20px auto;
+    gap: 0;
+    a {
+
+      font-family: "Nunito";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+  width: 150px;
+  height: 20px;
+  
+  color: white;
+  text-decoration: none;
+    }
+
+  }
+
+  div {
+    height: 150px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 20px;
+  color: white;
+  input::placeholder {
+    color: $footer-input-color;
+    text-align: center;
+  }
+  input {
+    width: 208px;
+height: 45px;
+background-color: $footer-input-bg;
+border: none;
+
+  }
+  a {
+    font-family: "Nunito";
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+
+width: 230px;
+height: 28px;
+  }
+  h2 {
+    width :141px;
+    height: 28px;
+
+    font-family: "Nunito";
+font-size: 20px;
+font-weight: 700;
+line-height: 27px;
+letter-spacing: 0em;
+text-align: left;
+
+
+
+
+  }
+  }
+}
