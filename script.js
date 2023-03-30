@@ -8,7 +8,7 @@ const contBtnLeft = document.querySelector(".cont-btn-left");
 
 const containerCards = document.querySelectorAll(".container-card");
 
-let indexData = 0;
+let indexData = 0 ;
 let IndexDataMax = containerCardsData.length 
 
 let index = 0;
@@ -26,7 +26,7 @@ contBtnLeftData.addEventListener("click", () => {
   containerCardsData.forEach((containerCard) => {
    
     containerCard.style.transform =
-      "translateX(" + -1070 * indexData + "px)";
+      "translateX(" + -1070 * (indexData %3) + "px)";
   });
 });
 
@@ -37,13 +37,11 @@ contBtnRightData.addEventListener("click", () => {
   if (indexData != 0) {
     contBtnLeftData.style.visibility = "visible";
   }
-  if (((indexData+1)*4) >= IndexDataMax ) {
-    console.log("indexData+1)*4) == IndexDataMax");
-    contBtnRightData.style.visibility = "hidden";
-  }
+  
   containerCardsData.forEach((containerCard) => {
     
-    containerCard.style.transform = "translateX(" + -1070 * indexData + "px)";
+    containerCard.style.transform =
+      "translateX(" + -1070 * (indexData % 3) + "px)";
   });
 });
 
@@ -59,7 +57,7 @@ contBtnLeft.addEventListener("click", () => {
   containerCards.forEach((containerCard) => {
     
     containerCard.style.transform =
-      "translateX(" + -1070 * index + "px)";
+      "translateX(" + -1070 * (index%5) + "px)";
   });
 });
 
@@ -67,16 +65,14 @@ contBtnRight.addEventListener("click", () => {
   console.log("right" + containerCardsData.length + containerCardsData);
   index++;
   console.log(index);
+  
   if (index != 0) {
     contBtnLeft.style.visibility = "visible";
   }
-  if ((index + 1) * 2 >= IndexMax) {
-    console.log("index+1)*2) == IndexMax");
-    contBtnRight.style.visibility = "hidden";
-  }
+ 
   containerCards.forEach((containerCard) => {
    
-    containerCard.style.transform = "translateX(" + -1070 * index+ "px)";
+    containerCard.style.transform = "translateX(" + -1070 * (index%5)+ "px)";
   });
 });
 
