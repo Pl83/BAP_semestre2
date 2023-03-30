@@ -70,6 +70,10 @@ contBtnRight.addEventListener("click", () => {
   if (index != 0) {
     contBtnLeft.style.visibility = "visible";
   }
+  if ((index + 1) * 2 >= IndexMax) {
+    console.log("index+1)*2) == IndexMax");
+    contBtnRight.style.visibility = "hidden";
+  }
   containerCards.forEach((containerCard) => {
    
     containerCard.style.transform = "translateX(" + -1070 * index+ "px)";
