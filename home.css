@@ -372,5 +372,18 @@ section.slider-section {
     width: 375px;
   }
 }
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  nav {
+    background-color: brown;
+  }
+  .container-card-data {
+    width: 45%;
+    margin: 20px;
+  }
+  .container-card {
+    width: 490px;
+    margin: 20px;
+  }
+}
 
 /*# sourceMappingURL=home.css.map */
