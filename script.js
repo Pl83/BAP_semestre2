@@ -54,7 +54,8 @@ contBtnLeft.addEventListener("click", () => {
   }
 
   containerCards.forEach((containerCard) => {
-    containerCard.style.transform = "translateX(" + -1070 * (index % 5) + "px)";
+    containerCard.style.transform =
+      "translateX(" + -(w * 0.696) * (index % 5) + "px)";
   });
 });
 
@@ -68,6 +69,7 @@ contBtnRight.addEventListener("click", () => {
   }
 
   containerCards.forEach((containerCard) => {
-    containerCard.style.transform = "translateX(" + -1070 * (index % 5) + "px)";
+    containerCard.style.transform =
+      "translateX(" + -(w * 0.696) * (index % 5) + "px)";
   });
 });
