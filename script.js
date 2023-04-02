@@ -14,31 +14,34 @@ let IndexDataMax = containerCardsData.length;
 let index = 0;
 let IndexMax = containerCards.length;
 
+var w = window.innerWidth;
+
 contBtnLeftData.addEventListener("click", () => {
   console.log("left" + "Data" + containerCardsData.length + containerCardsData);
   indexData--;
-
+  console.log(w)
   if (indexData == 0) {
     contBtnLeftData.style.visibility = "hidden";
   }
 
   containerCardsData.forEach((containerCard) => {
     containerCard.style.transform =
-      "translateX(" + -1070 * (indexData % 3) + "px)";
+      "translateX(" + -(w * 0.696) * (indexData % 3) + "px)";
   });
 });
 
 contBtnRightData.addEventListener("click", () => {
   console.log("right Data" + containerCardsData.length + containerCardsData);
   indexData++;
-  console.log(indexData + "Data");
+ 
+  console.log(w);
   if (indexData != 0) {
     contBtnLeftData.style.visibility = "visible";
   }
 
   containerCardsData.forEach((containerCard) => {
     containerCard.style.transform =
-      "translateX(" + -1070 * (indexData % 3) + "px)";
+      "translateX(" + -(w*0.696)* (indexData % 3) + "px)";
   });
 });
 

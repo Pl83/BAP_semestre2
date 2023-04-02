@@ -336,9 +336,9 @@ h1.title {
 section.slider-section {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-around;
-  width: 100%;
+  width: 100vw;
   height: 300px;
   gap: 70px;
   text-align: center;
@@ -348,9 +348,9 @@ section.slider-section {
 section.slider-section {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-around;
-  width: 100%;
+  width: 100vw;
   height: 300px;
   gap: 50px;
   text-align: center;
@@ -363,6 +363,11 @@ section.slider-section {
   }
   .ligne1, .ligne3 {
     gap: 0px;
+  }
+  .container-card-data {
+    width: 50%;
+    background-color: green;
+    margin: 25px;
   }
 }
 
