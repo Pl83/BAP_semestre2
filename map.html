@@ -92,7 +92,10 @@
     </section>
   </main>
   <footer>
-    <h3>Chaville</h3>
+    <div>
+      <h3>Chaville</h3>
+      <button @onclick="meteocall">meteo</button>
+    </div>
     <div class="rs">
       <img src="img/facebook.png" alt="">
       <img src="img/twiter.png" alt="">
@@ -103,6 +106,16 @@
   </footer>
 </div>
   <button id="open-popup" class="btnbot"><img id="mydivheader" src="img/bot.png" alt=""></button>
+  
+  <div id="meteo">
+    <img id="soleil" src="img/soleil.png" alt="">
+    <img id="pluie" src="img/pluie.png" alt="">
+    <img id="nuage" src="img/nuage.png" alt="">
+    <img id="clair" src="img/ciel-clair.png" alt="">
+    <img id="neige" src="img/neige.png" alt="">
+    <img id="orage" src="img/orage.png" alt="">
+  </div>
+
   <div id="popup" class="popup">
     <div class="popup-content">
       <button id="close-popup" class="cross"><img src="img/close.png" alt=""></button>
