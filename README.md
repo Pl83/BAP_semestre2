@@ -11,6 +11,9 @@ Aprés brainstorming et réunion créative nous avons decider de faire 4 page po
  ## Refonte Home Page
  
  ## Page Map
+ Cette page à pour but de mettre en avant les petits commerce de Chaville. 
+ On y retrouve une liste de petit commerce classer par catégorie avec leur information.
+ La partie map interactive permet de visualiser l'emplacement de chaque commerce.
  
  ## Page Jeux
  
