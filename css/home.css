@@ -76,27 +76,8 @@ footer div h2 {
   box-sizing: border-box;
 }
 
-nav {
-  background-color: #174F90;
-  height: 100px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-}
-nav ul {
-  list-style: none;
-  height: 100%;
-}
-nav ul li a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 20px;
-  font-weight: 600;
-}
-nav ul li a:hover {
-  color: red;
+main {
+  background-color: #FFFFFF;
 }
 
 h1.title {
@@ -212,7 +193,7 @@ h1.title {
 .input-and-tag {
   width: 100vw;
   height: 600px;
-  background: url(image/image\ 10.jpg);
+  background: url(../img/BgChavilleHome.jpg);
 }
 
 .container.data {
@@ -373,9 +354,6 @@ section.slider-section {
   }
 }
 @media screen and (max-width: 768px) and (min-width: 481px) {
-  nav {
-    background-color: brown;
-  }
   .container-card-data {
     width: 45%;
     margin: 20px;
@@ -432,6 +410,82 @@ footer {
   height: auto;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+/* burguer responsive */
+@media screen and (max-width: 500px) {
+  header #nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 20px;
+    top: -200px;
+  }
+  header #logo {
+    width: 150px;
+    height: 100px;
+  }
+  header #bur {
+    display: block;
+    z-index: 10;
+  }
+}
+body {
+  background-color: #174F90;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  height: 110px;
+  background-color: #FFFFFF;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header #logo {
+  width: 25vw;
+  height: 100px;
+  margin-left: 50px;
+  margin-top: 5px;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 50px;
+  gap: 40px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #174F90;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#bur {
+  display: none;
+  padding-right: 20px;
+  padding-top: 35px;
+}
+
+#bur span {
+  display: block;
+  width: 30px;
+  height: 5px;
+  background-color: #174F90;
+  margin: 5px;
+  position: relative;
 }
 
 /*# sourceMappingURL=home.css.map */

@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="map.css">
-  <link rel="stylesheet" href="chatbot.css">
+  <link rel="stylesheet" href="css/map.css">
+  <link rel="stylesheet" href="css/chatbot.css">
   <title>Map commerce</title>
 </head>
 <body>
@@ -25,6 +25,7 @@
       <span id="span_three"></span>
     </div>
   </header>
+  
   <main>
     <section id="sone">
       <h1>Explorez Chatville</h1>
@@ -93,28 +94,33 @@
   </main>
   <footer>
     <div>
-      <h3>Chaville</h3>
-      <button @onclick="meteocall">meteo</button>
-    </div>
-    <div class="rs">
-      <img src="img/facebook.png" alt="">
-      <img src="img/twiter.png" alt="">
-    </div>
-    
+      <h2>NEWSLETTER</h2>
+      <a> Saisissez votre adresse mail : </a>
+      <input type="email" placeholder="exemple@gmail.com">
 
+    </div>
+    <div class="list-infos">
+      <a href=""> Désinscription</a>
+      <a href="">Mentions légales</a>
+      <a href="">Accéssibilté</a>
+      <a href="">Contact</a>
+      <a href="">Plan du site</a>
+    </div>
     
+    <img src="img/logoChavill.png">
   </footer>
-</div>
+
   <button id="open-popup" class="btnbot"><img id="mydivheader" src="img/bot.png" alt=""></button>
   
-  <div id="meteo">
+  <!-- uncomment this + the js in chatbot.js to get the weather -->
+  <!-- <div id="meteo">
     <img id="soleil" src="img/soleil.png" alt="">
     <img id="pluie" src="img/pluie.png" alt="">
     <img id="nuage" src="img/nuage.png" alt="">
     <img id="clair" src="img/ciel-clair.png" alt="">
     <img id="neige" src="img/neige.png" alt="">
     <img id="orage" src="img/orage.png" alt="">
-  </div>
+  </div> -->
 
   <div id="popup" class="popup">
     <div class="popup-content">
@@ -127,7 +133,9 @@
         <button id="btn-valider">Valider</button></div>
     </div>
   </div>
-  <script src="chatbot.js"></script>
-  <script src="map.js"></script>
+  <script src="js/chatbot.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/main.js"></script>
+</div>
 </body>
 </html>

@@ -21,42 +21,8 @@ $footer-bg-blue: #174F90;
 
 }
 
-nav {
-  background-color: $blue_background;
-  height: 100px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-
-
-
-  ul {
-    list-style: none;
-
-    height: 100%;
-
-    li {
-      a {
-        text-decoration: none;
-        color: $white-color;
-        font-size: 20px;
-        font-weight: 600;
-
-        &:hover {
-          color: red;
-        }
-      }
-    }
-
-
-  }
-
-
-
-
-
+main{
+  background-color: #FFFFFF;
 }
 
 h1.title {
@@ -207,7 +173,7 @@ h1.title {
 .input-and-tag {
   width: 100vw;
   height: 600px;
-  background: url(image/image\ 10.jpg);
+  background: url(../img/BgChavilleHome.jpg);
 
 }
 
@@ -260,8 +226,6 @@ h1.title {
 }
 
 .container-card {
-
-
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   background-color: rgba(17, 25, 40, 0.25);
@@ -275,8 +239,6 @@ h1.title {
   justify-content: space-between;
   text-align: center;
   flex-shrink: 0;
-
-
   margin: 20px;
   width: 495px;
   height: 100%;
