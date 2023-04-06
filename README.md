@@ -21,6 +21,7 @@ Aprés brainstorming et réunion créative nous avons decider de faire 4 page po
  
  Pour compiler le sass faire : 
  `$ cd css` 
+ 
  `$ sass --watch home.scss:home.css`
  
-=
+
