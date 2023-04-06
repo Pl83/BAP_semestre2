@@ -5,6 +5,7 @@ Aprés brainstorming et réunion créative nous avons decider de faire 4 page po
   <li> La Page Map </li>
   <li> La Page Jeux </li>
   <li> La landing Page JO </li>
+  
  Nous allons maintenant vous expliquez chaque page.
  
  ## Refonte Home Page
@@ -16,6 +17,7 @@ Aprés brainstorming et réunion créative nous avons decider de faire 4 page po
  ## Landing Page JO
  
  ## Instalation du projet
+ 
  Pour récupérer un projet faire un git clone : 
  `$ git clone git@github.com:Pl83/BAP_semestre2.git`
  
