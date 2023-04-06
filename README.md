@@ -19,9 +19,11 @@ Aprés brainstorming et réunion créative nous avons decider de faire 4 page po
  ## Instalation du projet
  
  Pour récupérer un projet faire un git clone : 
+ 
  `$ git clone git@github.com:Pl83/BAP_semestre2.git`
  
  Pour compiler le sass faire : 
+ 
  `$ cd css` 
  
  `$ sass --watch home.scss:home.css`
