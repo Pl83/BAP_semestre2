@@ -1,0 +1,43 @@
+// 1025px — 1200px
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+
+  .tag_container .tag {
+    width:20vw;
+    
+  }
+  .ligne1 , .ligne3{
+ 
+    gap: 0px;
+  }
+
+  nav {
+   
+    
+  }
+    .container-card-data {
+    width: 50%;
+    
+    margin: 25px;
+    }
+        .container-card{
+          
+          width: 375px;
+        }
+  
+}
+//481px — 768px
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  nav {
+    background-color: brown;
+  }
+    .container-card-data {
+      width: 45%;
+ 
+      margin: 20px;
+    }
+         .container-card {
+    
+           width: 490px;
+          margin: 20px;
+         }
+}
