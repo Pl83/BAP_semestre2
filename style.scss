@@ -5,15 +5,13 @@
   --dark-color : #1B1B1B;
   --gold : #D7C378;
   --light-color : #E0E0E0;
-<<<<<<< HEAD
-=======
   --grey : #8A8A8A;
->>>>>>> origin/hugo
 }
 
 
 
 #ChavilleAction{
+  padding-bottom: 10%;
   height: 100vh;
   background-color: var(--dark-color);
   display: flex;
@@ -42,36 +40,37 @@
         font-size: large;
       }
     }
-    #images{
-      height: 60%;
+    #images {
+      height: 70%;
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      div{
-        width: 75%;
-        height: 100%;
-        display: flex;
-        align-items: end;
-        position: relative;
-        img{
-          width: 30%;
-          height: 80%;
-        }
-        #image2{
-          position: absolute;
-          top: 50px;
-          left: 25%;
-        }
-        #image3{
-          position: absolute;
-          top: 10px;
-          left: 50%;
-        }
+      #tennis{
+        background-image: url("images/image1.png");
+        transform: translate(15%, 15%);
+        z-index: 5;
+      }
+      #course{
+        background-image: url("images/image2.png");
+        z-index: 6;
+      }
+      #ski{
+        background-image: url("images/image3.png");
+        transform: translate(-15%, -15%);
+        z-index: 7;
+      }
+      .cardgang {
+        height: 90%;
+        width: 25%;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
       }
     }
   }
-}
+
+
 #JouerAussi{
   height: 100vh;
   background-color: var(--light-color);
@@ -105,12 +104,18 @@
       justify-content: center;
       gap: 30px;
       h3{
-        font-size: xx-large;
+        font-size: 1.8rem;
         font-family: "Poppins Medium";
         font-weight: lighter;
       }
-      p{
-        font-size: large;
+      .leftP{
+        text-align: end;
+        font-size: 1.2rem;
+        font-family: "Kanit", sans-serif;
+      }
+
+      .rightP{
+        font-size: 1.2rem;
         font-family: "Kanit", sans-serif;
       }
       button{
@@ -122,7 +127,7 @@
         color: var(--gold);
         background-color: var(--dark-color);
         font-family: "Kanit", sans-serif;
-        font-size: large;
+        font-size: 1.2rem;
       }
     }
     img{
@@ -130,7 +135,7 @@
     }
   }
 }
-<<<<<<< HEAD
+
 .Section1{
     height: 100vh;
     background-color: var(--dark-color);
@@ -140,7 +145,7 @@
   .backdrop{
     height: 85%;
     width: 100%;
-    background-image: url(../images/paris2024.png);
+    background-image: url(images/paris2024.png);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -180,17 +185,18 @@
         width: 100px;
       }
     }
-    .retour{
-      width: 10%;
-    }
+
     .logo{
       width: 15%;
+    }
+    .burger{
+      display: none;
     }
     .logo{
       width: auto;
       height: 90%;
     }
-    nav{
+    #navburg{
       width: 70%;
       display: flex;
       align-items: center;
@@ -271,10 +277,10 @@
       align-items: center;
       justify-content: center;
       gap: 30px;
-      img{
+        img{
+           display: block;
+        }
 
-
-      }
     }
   }
   .left{
@@ -285,7 +291,7 @@
     align-items: center;
     width: 100%;
 
-    .pav_doc{
+    .pav_docL{
       width: 50%;
       padding-left: 10%;
       padding-right: 10%;
@@ -327,17 +333,14 @@
       align-items: center;
       justify-content: center;
       gap: 30px;
-      img{
-
-
-      }
     }
   }
 
 }
-=======
+
 footer{
   height: 40vh;
+
   background-color: var(--dark-color);
   #footerhaut{
     height: 85%;
@@ -347,10 +350,12 @@ footer{
       width: 65%;
       height: 100%;
       display: flex;
+      flex-direction: row;
       justify-content: space-around;
+      align-items: center;
       ul{
         list-style: none;
-        font-size: x-large;
+        font-size: 1.2rem;
         font-family: "Poppins Medium";
         color: var(--grey);
         margin-top: 20px;
@@ -370,9 +375,13 @@ footer{
       align-items: center;
       font-weight: normal;
       border-left: 1px solid var(--grey);
+      img{
+        width: 35%;
+        height: auto;
+      }
       p{
         font-family: 'Poppins', sans-serif;
-        font-size: 100px;
+        font-size: 1.2rem;
         color: var(--gold);
       }
     }
@@ -384,9 +393,267 @@ footer{
       color: var(--gold);
       text-align: center;
       font-family: 'Poppins', sans-serif;
-      font-size: x-large;
+      font-size: 1.2rem;
       font-weight: bold;
     }
   }
 }
->>>>>>> origin/hugo
+
+//Responsive
+
+@media only screen and (max-width: 1440px) {
+  .Section2 {
+    height: 170vh;
+  }
+
+}
+@media only screen and (max-width: 1024px) {
+  .Section1 {
+    .backdrop {
+      img{
+        width: 50%;
+        height: auto;
+        margin-top: 1%;
+      }
+    }
+    .header{
+      #navburg{
+        ul{
+          gap: 175px;
+        }
+      }
+      .liseraire{
+        img {
+          display: none;
+        }
+      }
+    }
+  }
+  .Section2 {
+    height: 215vh;
+  }
+  #ChavilleAction{
+    padding-bottom: 10%;
+    #display{
+      width: 90%;
+      #images{
+        div{
+          width: 100%
+        }
+        #tennis{
+          transform: translate(5%, 5%);
+          z-index: 5;
+        }
+        #course{
+
+          z-index: 6;
+        }
+        #ski{
+          transform: translate(-5%, -5%);
+        }
+        .cardgang {
+          height: 70%;
+          width: 25%;
+
+        }
+      }
+    }
+  }
+}
+#footerdroite{
+  img{
+    width: 50%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .Section1{
+      .header{
+        #navburg{
+            ul{
+                gap: 100px;
+            }
+        }
+      }
+  }
+  .Section2 {
+    height: 250vh;
+    .left {
+      .pav_docL {
+        width: 50%;
+        padding-left: 10%;
+        padding-right: 1%;
+        font-family: "Kanit", sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 26px;
+
+      }
+      .illu_S2{
+        img{
+          width: 50%;
+          height: auto;
+        }
+      }
+    }
+    .top {
+      .illu_S2{
+        img{
+          width: 50%;
+          height: auto;
+        }
+      }
+      .pav_doc {
+        padding-left: 1%;
+      }
+    }
+    }
+  #ChavilleAction{
+    #display{
+      #images{
+        #tennis{
+          transform: translate(0%, 0%);
+          z-index: 5;
+        }
+        #course{
+
+          z-index: 6;
+        }
+        #ski{
+          transform: translate(0%, 0%);
+        }
+        .cardgang {
+          height: 70%;
+          width: 25%;
+
+        }
+
+      }
+    }
+  }
+
+  #JouezAussi{
+    .bas{
+      width: 90%;
+    }
+  }
+}
+@media only screen and (max-width: 425px) {
+
+  .Section1 {
+    .backdrop{
+    }
+    .header {
+      height: 30%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0;
+      background-color: #EFEFEF;
+      z-index: 20;
+      .burger{
+        display: block;
+      }
+      #navburg.active{
+        display: block;
+
+      }
+      #navburg{
+        display: none;
+        width: 100%;
+        background-color: aliceblue;
+        ul{
+          gap: 15px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  .Section2{
+    gap: 20px;
+    height: 215vh;
+    .left{
+      flex-direction: column;
+      .illu_S2{
+        display: none;
+      }
+      .pav_docL{
+        display: flex;
+        width: 90%;
+        padding-left: 1%;
+        padding-right: 1%;
+        font-family: "Kanit", sans-serif;
+        flex-direction: column;
+        gap: 30px;
+      }
+
+    }
+    .top{
+      flex-direction: column;
+      .illu_S2{
+        display: none;
+      }
+      .pav_doc{
+        display: flex;
+        width: 90%;
+        padding-left: 1%;
+        padding-right: 1%;
+        font-family: "Kanit", sans-serif;
+        flex-direction: column;
+        gap: 30px;
+      }
+    }
+  }
+  #ChavilleAction {
+    padding-bottom: 10%;
+    height: 165vh;
+    background-color: var(--dark-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #display{
+      height: 140vh;
+      #images{
+        flex-direction: column;
+        .cardgang{
+          width: 90%;
+          height: 30%;
+        }
+      }
+    }
+  }
+  #JouerAussi{
+    height: 150vh;
+    .bas{
+      div{
+        width: 90%;
+      }
+    }
+  }
+  footer{
+    height: 100%;
+    #footerhaut{
+      flex-direction: column;
+      height: 60vh;
+      margin-bottom: 20px;
+      #footergauche{
+        flex-direction: column;
+
+      }
+      #footerdroite{
+        display: none;
+      }
+    }
+  }
+}
+
+
+
+
+
