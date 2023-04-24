@@ -1,9 +1,9 @@
 
 // menu deroulent 
 var pharmabtn = document.querySelector(".pharmabtn");
-console.log(pharmabtn);
+//console.log(pharmabtn);
 var pharma = document.querySelectorAll(".pharma");
-console.log(pharma);
+//console.log(pharma);
 pharmabtn.addEventListener("click", function() {
   if (pharma[0].style.display === "none") {
     pharma.forEach(element => {
@@ -18,9 +18,9 @@ pharmabtn.addEventListener("click", function() {
 });
 
 var boulbtn = document.querySelector(".boulbtn");
-console.log(boulbtn);
+//console.log(boulbtn);
 var boul = document.querySelectorAll(".boul");
-console.log(boul);
+//console.log(boul);
 boulbtn.addEventListener("click", function() {
   if (boul[0].style.display === "none") {
     boul.forEach(element => {
@@ -35,9 +35,9 @@ boulbtn.addEventListener("click", function() {
 });
 
 var boubtn = document.querySelector(".boubtn");
-console.log(boubtn);
+//console.log(boubtn);
 var bou = document.querySelectorAll(".bou");
-console.log(bou);
+//console.log(bou);
 boubtn.addEventListener("click", function() {
   if (bou[0].style.display === "none") {
     bou.forEach(element => {
@@ -111,33 +111,3 @@ boubtn.addEventListener("click", function() {
     })
 
 
-    // meteo
-
-    /*function meteocall() {
-      fetch('https://api.meteo-concept.com/api/forecast/daily/0?token=8b9e012cdfd29817fccf0690643de92992daf489a3baaa4dd9a90adc497d3f59&insee=92022')
-      .then(response => response.json())
-      .then(data => {
-        // console.log(data);
-        // console.log(data.forecast.weather);
-        const weather = data.forecast.weather;
-        if (weather == 0 || weather == 1 ){
-          document.querySelector('#soleil').style.display = 'block';
-        } else if (weather == 2 || weather == 3) {
-          document.querySelector('#clair').style.display = 'block';
-        } else if (weather == 4 || weather == 5) {
-          document.querySelector('#nuage').style.display = 'block';
-        } else if ( weather >=10 && weather <= 16 || weather >= 40 && weather <= 48 || weather >= 210 && weather <= 212) {
-          document.querySelector('#pluie').style.display = 'block';
-        } else if (weather >= 100 && weather <= 138) {
-          document.querySelector('#orage').style.display = 'block';
-        } else if ( weather >= 20 && weather <= 22 || weather >= 30 && weather <= 32 || weather >= 60 && weather <= 78 || weathe >= 220 && weather <= 222 || weather >= 230 && weather <= 232) {
-          document.querySelector('#neige').style.display = 'block';
-        } else {
-          console.log('error');
-        }
-      });
-    }*/
-
-
-    /* 
-    */

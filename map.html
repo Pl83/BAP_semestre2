@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/map.css">
   <link rel="stylesheet" href="css/chatbot.css">
-  <title>Map commerce</title>
+  <link rel="stylesheet" href="css/meteo.css">
+  <title>Map-Commerce</title>
 </head>
 <body>
   <div id="loader"></div>
@@ -15,8 +16,8 @@
   <header id="header">
     <img id="logo" src="img/logo.svg" alt="logo">
     <nav id="nav">
-      <a href="#">Accueil</a>
-      <a href="#">Map</a>
+      <a href="home.html">Accueil</a>
+      <a href="map.html">Map</a>
       <a href="#">Integration</a>
     </nav>
     <div id="bur">
@@ -28,7 +29,7 @@
 
   <main>
     <section id="sone">
-      <h1>Explorez Chatville</h1>
+      <h1>Explorez Chaville</h1>
       <p>Chaville est une ville idéale pour les amoureux de la nature et les amateurs de promenades en plein air.<br> 
         Venez découvrir tout ce que Chaville a à offrir et profitez de ses nombreux espaces verts pour vous ressourcer et vous détendre.</p>
       <button>Contactez nous</button>
@@ -37,7 +38,7 @@
 
       <div id="done">
         <div id="link">
-          <div class="catego"><h2 class="pharmabtn">Pharmacie ➜</h2><!--<img id="vector" src="img/Vector.png" alt="down">--></div>
+          <div class="catego"><h2 class="pharmabtn">Pharmacie ➜</h2></div>
           <p id="1" class="mapbtn pharma">Pharmacie Principale</p>
           <p id="2" class="mapbtn pharma">Pharmacie des Créneaux</p>
           <p id="3" class="mapbtn pharma">Pharmacie de la Pointe</p>
@@ -109,18 +110,15 @@
     
     <img src="img/logoChavill.png">
   </footer>
-
   
-  
-  <!-- uncomment this + the js in chatbot.js to get the weather -->
-  <!-- <div id="meteo">
+  <div id="meteo">
     <img id="soleil" src="img/soleil.png" alt="">
     <img id="pluie" src="img/pluie.png" alt="">
     <img id="nuage" src="img/nuage.png" alt="">
     <img id="clair" src="img/ciel-clair.png" alt="">
     <img id="neige" src="img/neige.png" alt="">
     <img id="orage" src="img/orage.png" alt="">
-  </div> -->
+  </div>
 
   <button id="open-popup" class="btnbot"><img id="mydivheader" src="img/bot.png" alt=""></button>
 
@@ -138,6 +136,7 @@
   <script src="js/chatbot.js"></script>
   <script src="js/map.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/meteo.js"></script>
 </div>
 </body>
 </html>

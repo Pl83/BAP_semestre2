@@ -6,6 +6,12 @@ window.addEventListener("load", function(){
   content.style.display = "block";
 });
 
+// logo
+let logo = document.querySelector("#logo");
+logo.addEventListener("click", function(){
+  window.location.href = "home.html";
+});
+
 // burger
 let burger = document.querySelector("#bur");
 let nav = document.querySelector("#nav");
@@ -16,7 +22,7 @@ var cont = 0;
 
 burger.addEventListener("click", function() {
   cont = cont + 1;
-  console.log(cont);
+  //console.log(cont);
   if (cont%2 != 0){
     for (i = 200 ; i >= 0 ; i--){
       nav.style.top = i + "px";

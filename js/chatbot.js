@@ -107,7 +107,7 @@ const inputMessage = document.getElementById('input-message');
     });
 
 const btn = document.querySelectorAll('button');
-console.log(btn);
+//console.log(btn);
 
 btn.forEach(element => {
   element.addEventListener('mousedown', function() {
@@ -123,7 +123,7 @@ btn.forEach(element => {
 
 //Make the DIV element draggagle:
 dragElement(document.getElementById("open-popup"));
-// dragElement(document.getElementById("meteo"));
+dragElement(document.getElementById("meteo"));
       
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
