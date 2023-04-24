@@ -25,7 +25,7 @@
       });
     }
 
-    meteocall();
+    //meteocall();
 
 
     dragElement(document.getElementById("meteo"));

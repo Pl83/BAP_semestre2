@@ -172,6 +172,11 @@ header nav a {
   
 }
 
+#intel a{
+  text-decoration: none;
+  color: #174F90;
+}
+
 #intel :first-child{
   display: flex;
   flex-direction: row;
@@ -214,6 +219,10 @@ header nav a {
 }
 
 .bou {
+  display: none;
+}
+
+.rest {
   display: none;
 }
 

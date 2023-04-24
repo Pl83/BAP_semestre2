@@ -28,7 +28,7 @@ const inputMessage = document.getElementById('input-message');
         messagesDiv.appendChild(messageDiv);
         messageDiv.classList.add('user');
         
-        if (message.toLowerCase() === 'bonjour' || message.toLowerCase() === 'salut' || message.toLowerCase() === 'hello' || message.toLowerCase() === 'yo' || message.toLowerCase() === 'coucou' || message.toLowerCase() === 'bonsoir' || message.toLowerCase() === 'bonjour !' || message.toLowerCase() === 'salut !' || message.toLowerCase() === 'hello !' || message.toLowerCase() === 'yo !' || message.toLowerCase() === 'coucou !' || message.toLowerCase() === 'bonsoir !') {
+        if (message.toLowerCase() === 'bonjour' || message.toLowerCase() === 'salut' || message.toLowerCase() === 'hello' || message.toLowerCase() === 'yo' || message.toLowerCase() === 'coucou' || message.toLowerCase() === 'bonsoir' || message.toLowerCase() === 'wesh' ||  message.toLowerCase() === 'bonjour !' || message.toLowerCase() === 'salut !' || message.toLowerCase() === 'hello !' || message.toLowerCase() === 'yo !' || message.toLowerCase() === 'coucou !' || message.toLowerCase() === 'bonsoir !' || message.toLowerCase() === 'wesh !' ) {
           const reponseDiv = document.createElement('div');
           reponseDiv.textContent = 'Bot : Bonjour, comment puis-je vous aider ?';
           messagesDiv.appendChild(reponseDiv);
@@ -45,6 +45,13 @@ const inputMessage = document.getElementById('input-message');
         else if (message.toLowerCase().endsWith('quoi') || message.toLowerCase().endsWith('quoi ?')) {
           const reponseDiv = document.createElement('div');
           reponseDiv.textContent = "Bot : feur";
+          messagesDiv.appendChild(reponseDiv);
+          reponseDiv.classList.add('bot');
+        }
+
+        else if (message.toLowerCase().includes('quoi') && message.toLowerCase().includes('cette') && message.toLowerCase().includes('page')) {
+          const reponseDiv = document.createElement('div');
+          reponseDiv.textContent = "Bot : Cette page est une page est un index de petit commerce de la ville de Chaville";
           messagesDiv.appendChild(reponseDiv);
           reponseDiv.classList.add('bot');
         }
