@@ -564,6 +564,9 @@ footer #footerbas p {
   #JouerAussi {
     height: 150vh;
   }
+  #JouerAussi .bas img {
+    display: none;
+  }
   #JouerAussi .bas div {
     width: 90%;
   }

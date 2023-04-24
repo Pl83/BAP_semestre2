@@ -631,8 +631,12 @@ footer{
   #JouerAussi{
     height: 150vh;
     .bas{
+      img{
+        display: none;
+      }
       div{
         width: 90%;
+
       }
     }
   }
