@@ -47,7 +47,7 @@ Un landing page en prévision des jeux olympiques de Paris.
  `$ sass --watch style.scss:build.css`
 
 
-## La V2
+# La V2
 La V2 se trouve sur la branch "backend". Elle n'est pas en ligne car nécessité un serveur pouvant héberger du node js.
 
 ### Différence :
