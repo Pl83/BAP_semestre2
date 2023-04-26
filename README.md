@@ -25,10 +25,14 @@ Aprés brainstorming et réunion créative nous avons decider de faire 4 page po
  
  `$ git clone git@github.com:Pl83/BAP_semestre2.git`
  
- Pour compiler le sass faire : 
+ Pour compiler le sass de la home page faire : 
  
  `$ cd css` 
  
  `$ sass --watch home.scss:home.css`
  
-
+ Pour compiler le sass de la landing page et de la m=page jeux : 
+ 
+ `$ cd css` 
+ 
+ `$ sass --watch style.scss:build.css`
