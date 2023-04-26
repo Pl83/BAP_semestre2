@@ -27,6 +27,16 @@ console.log("Server is running on port " + port);
 var cursor = null;
 var DataCommerce = [];
 
+function generateRandomString(length) {
+    let result = '';
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+';
+    const charactersLength = characters.length;
+    for (let i = 0; i < length; i++) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    return result;
+}
+
 async function zad() {
     try {
         await client.connect();
@@ -67,40 +77,63 @@ app.get('/data', async (req, res) => {
     res.send(data);
     console.dir("intel ====================");
 });
-    // app.post('/mail', (req, res) => {
-    //     console.log(req.body);
-    //     res.send({"message":"ok"});
+app.post('/mail', (req, res) => {
+    console.log(req.body);
+    
 
-    //     var nodemailer = require('nodemailer');
+    const qrcode = require('qrcode');
 
-    //     var transporter = nodemailer.createTransport({
-    //     service: 'gmail',
-    //     auth: {
-    //         user: 'bap.chaville@gmail.com',
-    //         pass: 'Password01$'
-    //     }
-    //     });
+    const options = {
+        width: 300,
+        height: 300,
+        margin: 1,
+        color: {
+            dark: '#000000',
+            light: '#ffffff'
+        }
+    };
 
-    //     var mailOptions = {
-    //     from: 'bap.chaville@gmail.com',
-    //     to: req.body.email,
-    //     subject: 'Promotion',
-    //     text: 'That was easy!'
-    //     };
+    let textu = 'Code promo de 5 % sur la prochaine commande de ' + req.body.usermail + '. Id:' +generateRandomString(8)
+    console.log(textu);
+    
+    qrcode.toDataURL(textu, options, function (err, url) {
+        console.log(url);
+        res.send({"message":url});
+    });
+    
+    //res.send({"message":textu});
 
-    //     transporter.sendMail(mailOptions, function(error, info){
-    //     if (error) {
-    //         console.log(error);
-    //     } else {
-    //         console.log('Email sent: ' + info.response);
-    //     }
-    //     });
+    // var nodemailer = require('nodemailer');
+
+    // var transporter = nodemailer.createTransport({
+    // service: 'gmail',
+    // auth: {
+    //     user: 'bot.coding.456@gmail.com',
+    //     pass: 'botcoding456!'
+    // }
     // });
+
+    // var mailOptions = {
+    // from: 'bot.coding.456@gmail.com',
+    // to: req.body,
+    // subject: 'Promotion',
+    // text: 'That was easy!'
+    // };
+
+    // transporter.sendMail(mailOptions, function(error, info){
+    // if (error) {
+    //     console.log(error);
+    // } else {
+    //     console.log('Email sent: ' + info.response);
+    // }
+    // });
+});
 
 
 
 httpServer.listen(port, () => {
     console.log(`On écoute le port n°${port}`)
 });
+
 
 

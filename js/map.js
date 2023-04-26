@@ -9,7 +9,7 @@ fetch('http://localhost:3000/data')
   //console.log(" the one :  " +data)
   // console.log(data[0])
   //console.table(data[0].Pharmacies[0].nom)
-  console.table(data[0].Pharmacies[0])
+  //console.table(data[0].Pharmacies[0])
 
   let link = document.getElementById("link");
   const keys = Object.keys(data[0]);
@@ -90,13 +90,41 @@ fetch('http://localhost:3000/data')
         site.textContent = "Lien site";
       }
 
-
-      
-      
     })
   });
 
 });
+
+function retrive() {
+  console.log("retrive on action");
+  let usermail = document.getElementById("usermail");
+  console.log(usermail.value);
+  if (usermail.value != null && usermail.value != "")
+  {
+    fetch('http://localhost:3000/mail', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({usermail: usermail.value})
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      let trueData = data.message;
+      console.log(trueData);
+      let img = document.createElement("img");
+      img.style.height = "200px";
+      img.style.width = "200px";
+      img.style.margin = "auto";
+      img.id = "qrcode";
+      img.src = trueData;
+      let Promo = document.getElementById("Promo");
+      Promo.appendChild(img);
+    })
+  }
+}
+
 
     
 
@@ -104,3 +132,6 @@ fetch('http://localhost:3000/data')
     Username : admin
     Password : cViz2xBYEcCRvsfN
     */
+
+
+    
