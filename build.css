@@ -34,6 +34,11 @@
   font-size: xx-large;
   margin-bottom: 25px;
 }
+@media only screen and (max-width: 1150px) {
+  #ChavilleAction #display #texte h2 {
+    margin-bottom: 0;
+  }
+}
 #ChavilleAction #display #texte p {
   color: var(--light-color);
   font-family: "Kanit", sans-serif;
@@ -386,7 +391,12 @@ footer #footerbas p {
 
 @media only screen and (max-width: 1440px) {
   .Section2 {
-    height: 170vh;
+    height: 270vh;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .Section2 {
+    height: 300vh;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -400,9 +410,6 @@ footer #footerbas p {
   }
   .Section1 .header .liseraire img {
     display: none;
-  }
-  .Section2 {
-    height: 215vh;
   }
   #ChavilleAction {
     padding-bottom: 10%;
@@ -433,12 +440,14 @@ footer #footerbas p {
   height: auto;
 }
 
+@media only screen and (max-width: 1440px) {
+  .Section2 {
+    height: 330vh;
+  }
+}
 @media only screen and (max-width: 768px) {
   .Section1 .header #navburg ul {
     gap: 100px;
-  }
-  .Section2 {
-    height: 250vh;
   }
   .Section2 .left .pav_docL {
     width: 50%;
@@ -479,9 +488,9 @@ footer #footerbas p {
     width: 90%;
   }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 768px) {
   .Section1 .header {
-    height: 30%;
+    height: 35%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -491,8 +500,12 @@ footer #footerbas p {
     background-color: #EFEFEF;
     z-index: 20;
   }
+  .Section1 .header .retour {
+    display: none;
+  }
   .Section1 .header .burger {
     display: block;
+    height: 30px;
   }
   .Section1 .header #navburg.active {
     display: block;
@@ -571,11 +584,11 @@ footer #footerbas p {
     width: 90%;
   }
   footer {
-    height: 100%;
+    height: 150vh;
   }
   footer #footerhaut {
     flex-direction: column;
-    height: 60vh;
+    height: 120vh;
     margin-bottom: 20px;
   }
   footer #footerhaut #footergauche {
@@ -584,6 +597,106 @@ footer #footerbas p {
   footer #footerhaut #footerdroite {
     display: none;
   }
+}
+#headerGame {
+  height: 60vh;
+  background-color: #EFEFEF;
+}
+@media only screen and (max-width: 1050px) {
+  #headerGame {
+    height: 60%;
+  }
+}
+
+#Scannez {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Poppins;
+}
+@media only screen and (max-width: 1050px) {
+  #Scannez {
+    height: 70vh;
+  }
+}
+#Scannez div {
+  height: 15%;
+  display: flex;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: large;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 940px) {
+  #Scannez div {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 620px) {
+  #Scannez div {
+    margin-bottom: 40px;
+  }
+}
+#Scannez div button {
+  width: 250px;
+  height: 45px;
+  border: none;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  color: var(--gold);
+  background-color: var(--dark-color);
+  font-family: "Kanit", sans-serif;
+  font-size: 1.2rem;
+}
+@media only screen and (max-width: 1050px) {
+  #Scannez div button {
+    height: 35px;
+    width: 170px;
+  }
+}
+#Scannez div p {
+  text-align: center;
+}
+#Scannez img {
+  width: 50%;
+}
+@media only screen and (max-width: 900px) {
+  #Scannez img {
+    width: 70%;
+  }
+}
+
+#cartes {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-family: Poppins;
+}
+@media only screen and (max-width: 1050px) {
+  #cartes {
+    height: 200vh;
+  }
+}
+@media only screen and (max-width: 700px) {
+  #cartes {
+    height: 300vh;
+  }
+}
+#cartes div {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#cartes div span {
+  font-size: larger;
 }
 
 /*# sourceMappingURL=build.css.map */

@@ -32,6 +32,10 @@
         font-weight: lighter;
         font-size: xx-large;
         margin-bottom: 25px;
+
+        @media only screen and (max-width: 1150px) {
+          margin-bottom: 0;
+        }
       }
       p{
         color: var(--light-color);
@@ -403,7 +407,14 @@ footer{
 
 @media only screen and (max-width: 1440px) {
   .Section2 {
-    height: 170vh;
+    height: 270vh;
+  }
+
+}
+
+@media only screen and (max-width: 1050px) {
+  .Section2 {
+    height: 300vh;
   }
 
 }
@@ -428,9 +439,6 @@ footer{
         }
       }
     }
-  }
-  .Section2 {
-    height: 215vh;
   }
   #ChavilleAction{
     padding-bottom: 10%;
@@ -466,6 +474,13 @@ footer{
     height: auto;
   }
 }
+
+@media only screen and (max-width: 1440px) {
+  .Section2 {
+    height: 330vh;
+  }
+
+}
 @media only screen and (max-width: 768px) {
   .Section1{
       .header{
@@ -477,7 +492,6 @@ footer{
       }
   }
   .Section2 {
-    height: 250vh;
     .left {
       .pav_docL {
         width: 50%;
@@ -539,13 +553,13 @@ footer{
     }
   }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 768px) {
 
   .Section1 {
     .backdrop{
     }
     .header {
-      height: 30%;
+      height: 35%;
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -554,8 +568,13 @@ footer{
       padding: 0;
       background-color: #EFEFEF;
       z-index: 20;
+
+      .retour{
+        display: none;
+      }
       .burger{
         display: block;
+        height: 30px;
       }
       #navburg.active{
         display: block;
@@ -641,10 +660,10 @@ footer{
     }
   }
   footer{
-    height: 100%;
+    height: 150vh;
     #footerhaut{
       flex-direction: column;
-      height: 60vh;
+      height: 120vh;
       margin-bottom: 20px;
       #footergauche{
         flex-direction: column;
@@ -653,6 +672,102 @@ footer{
       #footerdroite{
         display: none;
       }
+    }
+  }
+}
+
+//page game
+
+#headerGame{
+  height: 60vh;
+  background-color: #EFEFEF;
+
+  @media only screen and (max-width: 1050px) {
+    height: 60%;
+  }
+}
+
+#Scannez{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Poppins;
+
+  @media only screen and (max-width: 1050px) {
+    height: 70vh;
+  }
+  div{
+    height: 15%;
+    display: flex;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: large;
+    margin-bottom: 20px;
+
+    @media only screen and (max-width: 940px) {
+     flex-direction: column;
+    }
+
+    @media only screen and (max-width: 620px) {
+      margin-bottom: 40px;
+    }
+    button{
+      width: 250px;
+      height: 45px;
+      border: none;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      color: var(--gold);
+      background-color: var(--dark-color);
+      font-family: "Kanit", sans-serif;
+      font-size: 1.2rem;
+
+      @media only screen and (max-width: 1050px) {
+        height: 35px;
+        width: 170px;
+      }
+    }
+    p{
+      text-align: center;
+    }
+  }
+  img{
+    width: 50%;
+
+    @media only screen and (max-width: 900px) {
+      width: 70%;
+    }
+  }
+}
+
+#cartes{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-family: Poppins;
+
+  @media only screen and (max-width: 1050px) {
+    height: 200vh;
+  }
+
+  @media only screen and (max-width: 700px) {
+    height: 300vh;
+  }
+  div{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    span{
+      font-size: larger;
     }
   }
 }
