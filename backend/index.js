@@ -27,27 +27,6 @@ console.log("Server is running on port " + port);
 var cursor = null;
 var DataCommerce = [];
 
-// Connexion à la base de données
-// client.connect(err => {
-//     console.log("Connected to database");
-//     if (err) throw err;
-//     const collection = client.db("maps").collection("commerce");
-    
-//     // Récupération des données de la collection "commerce"
-//     collection.find({}).toArray((err, result) => {
-//         if (err) throw err;
-//         if (result.length > 0) {
-//             console.log("Data retrieved successfully:");
-//             console.log(result);
-//             DataCommerce = result;
-//         } else {
-//             console.log("The collection is empty.");
-//         }
-//         client.close();
-//     });
-// });
-
-
 async function zad() {
     try {
         await client.connect();

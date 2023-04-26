@@ -9,7 +9,7 @@ fetch('http://localhost:3000/data')
   //console.log(" the one :  " +data)
   // console.log(data[0])
   //console.table(data[0].Pharmacies[0].nom)
-  // console.table(data[0].Pharmacies[0])
+  console.table(data[0].Pharmacies[0])
 
   let link = document.getElementById("link");
   const keys = Object.keys(data[0]);
@@ -23,11 +23,13 @@ fetch('http://localhost:3000/data')
     h2.textContent = key + " ➜";
     div.appendChild(h2);
     link.appendChild(div);
-    console.log("this key is call " + key + " and here length is " + data[0][key].length);
+    //console.log("this key is call " + key + " and here length is " + data[0][key].length);
       for (let j = 0; j < data[0][key].length; j++) {
-        console.log(data[0][key][j].nom);
+        //console.log(data[0][key][j].nom);
         let p = document.createElement("p");
         p.textContent = data[0][key][j].nom;
+        p.classList.add(key +"p");
+        p.style.display = "none";
         h2.insertAdjacentElement("afterend", p);
       }
     }
@@ -37,142 +39,64 @@ fetch('http://localhost:3000/data')
     element.addEventListener("click", function() {
       let h2 = element.querySelector("h2");
       let Theclicked = h2.classList[0];
-      console.log(Theclicked);
+      //console.log(Theclicked);
       let TheclickedTrue = document.querySelector("." + Theclicked);
-      console.log(TheclickedTrue);
+      //console.log(TheclickedTrue);
+      let toShow = document.querySelectorAll("." + Theclicked + "p");
+      //console.log(toShow);
+      if (toShow[0].style.display === "none") {
+        toShow.forEach(element => {
+          element.style.display = "block";
+        });
+      } else {
+        toShow.forEach(element => {
+          element.style.display = "none";
+        });
+      }
     })
   });
-})
+
+  let tel = document.getElementById("tel");
+  let loca = document.getElementById("loca");
+  let site = document.getElementById("site");
+  let map = document.getElementById("map");
+  let cartouchesite = document.getElementById("cartouche_site");
+
+  let p = document.querySelectorAll("p");
+  p.forEach(element => {
+    element.addEventListener("click", function() {
+      //console.log(element.textContent);
+      //console.log(element.classList)
+      // remove last caracter of the class
+      let pureClass = element.classList[0].slice(0, -1);
+      console.log(pureClass);
+      let i = 0;
+      while (data[0][pureClass][i].nom != element.textContent) {
+        i++;
+      }
+      // console.log(data[0][pureClass][i].nom);
+      // console.log(data[0][pureClass][i].telephone);
+      // console.log(data[0][pureClass][i].adresse);
+      // console.log(data[0][pureClass][i].site);
+      
+      tel.textContent = data[0][pureClass][i].telephone;
+      loca.textContent = data[0][pureClass][i].adresse;
+      map.src = data[0][pureClass][i].maplink;
+      if ( data[0][pureClass][i].site == "none") {
+        cartouchesite.style.display = "none";
+      } else {
+        cartouchesite.style.display = "flex";
+        site.href = data[0][pureClass][i].site;
+        site.textContent = "Lien site";
+      }
 
 
+      
+      
+    })
+  });
 
-
-// menu deroulent 
-// var pharmabtn = document.querySelector(".pharmabtn");
-// var pharma = document.querySelectorAll(".pharma");
-
-// var boulbtn = document.querySelector(".boulbtn");
-// var boul = document.querySelectorAll(".boul");
-
-// var boubtn = document.querySelector(".boubtn");
-// var bou = document.querySelectorAll(".bou");
-
-// var restbtn = document.querySelector(".restbtn");
-// var rest = document.querySelectorAll(".rest");
-
-// pharmabtn.addEventListener("click", function() {
-//   if (pharma[0].style.display === "none") {
-//     pharma.forEach(element => {
-//       element.style.display = "block";
-//     });
-//     boul.forEach(element => {
-//       element.style.display = "none";
-//     });
-//     bou.forEach(element => {
-//       element.style.display = "none";
-//     });
-//     rest.forEach(element => {
-//       element.style.display = "none";
-//     });
-//   }
-//   else {
-//     pharma.forEach(element => {
-//       element.style.display = "none";
-//     });
-//   }
-// });
-
-// boulbtn.addEventListener("click", function() {
-//   if (boul[0].style.display === "none") {
-//     boul.forEach(element => {
-//       element.style.display = "block";
-//     });
-//     pharma.forEach(element => {
-//       element.style.display = "none";
-//     });
-//     bou.forEach(element => {
-//       element.style.display = "none";
-//     });
-//     rest.forEach(element => {
-//       element.style.display = "none";
-//     });
-//   }
-//   else {
-//     boul.forEach(element => {
-//       element.style.display = "none";
-//     });
-//   }
-// });
-
-// boubtn.addEventListener("click", function() {
-//   if (bou[0].style.display === "none") {
-//     bou.forEach(element => {
-//       element.style.display = "block";
-//     });
-//     pharma.forEach(element => {
-//       element.style.display = "none";
-//     });
-//     boul.forEach(element => {
-//       element.style.display = "none";
-//     });
-//     rest.forEach(element => {
-//       element.style.display = "none";
-//     });
-//   }
-//   else {
-//     bou.forEach(element => {
-//       element.style.display = "none";
-//     });
-//   }
-// });
-
-// restbtn.addEventListener("click", function() {
-//   if (rest[0].style.display === "none") {
-//     rest.forEach(element => {
-//       element.style.display = "block";
-//     });
-//     pharma.forEach(element => {
-//       element.style.display = "none";
-//     });
-//     boul.forEach(element => {
-//       element.style.display = "none";
-//     });
-//     bou.forEach(element => {
-//       element.style.display = "none";
-//     });
-//   }
-//   else {
-//     rest.forEach(element => {
-//       element.style.display = "none";
-//     });
-//   }
-// });
-
-
-
-
-
-// tableaux associatifs des données
-
-    // Lien google map
-  
-
-// changer les donners de la carte et des infos
-    // const mapbtn = document.querySelectorAll(".mapbtn");
-    // mapbtn.forEach(btn => {
-    //   btn.addEventListener('click', () => {
-    //     document.getElementById("map").src = maplink[btn.id];
-    //     document.getElementById("tel").innerHTML = maptel[btn.id];
-    //     if (mapsite[btn.id] == "none") {
-    //       document.getElementById("cartouche_site").style.display = "none";
-    //     } else {
-    //       document.getElementById("cartouche_site").style.display = "flex";
-    //       document.getElementById("site").href = mapsite[btn.id];
-    //       document.getElementById("site").innerHTML = "Lien site";
-    //     }
-    //     document.getElementById("loca").innerHTML = maploca[btn.id];
-    //   })
-    // });
+});
 
     
 
