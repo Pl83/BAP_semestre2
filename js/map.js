@@ -3,9 +3,9 @@
 fetch('http://localhost:3000/data')
 .then(response => response.json())
 .then(data => {
-  //console.log(data)
+  console.log(data)
   //console.table(data)
-  //console.table(data[0])
+  console.table(data[0])
   //console.log(" the one :  " +data)
   // console.log(data[0])
   //console.table(data[0].Pharmacies[0].nom)
@@ -26,6 +26,10 @@ fetch('http://localhost:3000/data')
     //console.log("this key is call " + key + " and here length is " + data[0][key].length);
       for (let j = 0; j < data[0][key].length; j++) {
         //console.log(data[0][key][j].nom);
+        // let horaire = data[0][key][j].horaire;
+        // console.log(horaire);
+        // let lundi = horaire[0];
+        // console.log(lundi);
         let p = document.createElement("p");
         p.textContent = data[0][key][j].nom;
         p.classList.add(key +"p");

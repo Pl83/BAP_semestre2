@@ -5,28 +5,120 @@
       "adresse": "143 Grande Rue, 92310 Sèvres",
       "telephone": "01.45.34.29.70",
       "site": "https://pharmacie-principale-92.pharminfo.fr/",
-      "maplink":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12862.533810542196!2d2.1951704735773747!3d48.81936285401958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67b75d2433a71%3A0x6e6505ce3ee3115f!2sPharmacie%20Principale!5e0!3m2!1sfr!2sfr!4v1679590173136!5m2!1sfr!2sfr"
+      "maplink":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12862.533810542196!2d2.1951704735773747!3d48.81936285401958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67b75d2433a71%3A0x6e6505ce3ee3115f!2sPharmacie%20Principale!5e0!3m2!1sfr!2sfr!4v1679590173136!5m2!1sfr!2sfr",
+      "horaire": [
+        {
+          "lundi": "08:00 - 20:30"
+        },
+        {
+          "mardi": "08:00 - 20:30"
+        },
+        {
+          "mercredi": "08:00 - 20:30"
+        },
+        {
+          "jeudi": "08:00 - 20:30"
+        },
+        {
+          "vendredi": "08:00 - 20:30"
+        },
+        {
+          "samedi": "09:00 - 20:00"
+        },
+        {
+          "dimanche": "none"
+        }
+      ]
     },
     {
       "nom": "Pharmacie des Créneaux",
       "adresse": "1059 Av. Roger Salengro, 92370 Chaville ",
       "telephone": "01.47.50.50.38",
       "site": "http://pharmaciedescreneaux-chaville.com/",
-      "maplink":"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d21016.29288631625!2d2.1951705!3d48.8193629!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67b8457169f1b%3A0x26ec8cd2495bba31!2sPharmacie%20des%20Cr%C3%A9neaux!5e0!3m2!1sfr!2sfr!4v1679590239777!5m2!1sfr!2sfr"
+      "maplink":"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d21016.29288631625!2d2.1951705!3d48.8193629!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67b8457169f1b%3A0x26ec8cd2495bba31!2sPharmacie%20des%20Cr%C3%A9neaux!5e0!3m2!1sfr!2sfr!4v1679590239777!5m2!1sfr!2sfr",
+      "horaire": [
+        {
+          "lundi": "09:00 - 19:30"
+        },
+        {
+          "mardi": "09:00 - 19:30"
+        },
+        {
+          "mercredi": "09:00 - 19:30"
+        },
+        {
+          "jeudi": "09:00 - 19:30"
+        },
+        {
+          "vendredi": "09:00 - 19:30"
+        },
+        {
+          "samedi": "09:00 - 19:00"
+        },
+        {
+          "dimanche": "none"
+        }
+      ]
     },
     {
-      "nom": "Pharmacie de la Point",
+      "nom": "Pharmacie de la Pointe",
       "adresse": "2025 Av. Roger Salengro, 92370 Chaville",
       "telephone": "01.47.50.40.80",
       "site": "none",
-      "maplink":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21022.191467715027!2d2.149090379101567!3d48.8052931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67b89dda96f07%3A0x4a9fdd76d0141846!2sPharmacie%20de%20la%20Pointe!5e0!3m2!1sfr!2sfr!4v1679590284375!5m2!1sfr!2sfr"
+      "maplink":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21022.191467715027!2d2.149090379101567!3d48.8052931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67b89dda96f07%3A0x4a9fdd76d0141846!2sPharmacie%20de%20la%20Pointe!5e0!3m2!1sfr!2sfr!4v1679590284375!5m2!1sfr!2sfr",
+      "horaire":[
+        {
+          "lundi": "09:00 - 20:00"
+        },
+        {
+          "mardi": "09:00 - 20:00"
+        },
+        {
+          "mercredi": "09:00 - 20:00"
+        },
+        {
+          "jeudi": "09:00 - 20:00"
+        },
+        {
+          "vendredi": "09:00 - 20:00"
+        },
+        {
+          "samedi": "09:00 - 19:30"
+        },
+        {
+          "dimanche": "none"
+        }
+      ]
     },
     {
       "nom": "Pharmacie des Ecoles",
       "adresse": "667 Av. Roger Salengro, 92370 Chaville",
       "telephone": "01.47.50.48.98",
       "site": "https://pharmacie-ecole-chaville.mesoigner.fr/",
-      "maplink":"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d21016.29288631625!2d2.1951705!3d48.8193629!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67b83150059b1%3A0x48f2df7c73db0ea9!2sPharmacie%20des%20Ecoles%20%2F%20Selarl%20Pharmacie%20Lemare!5e0!3m2!1sfr!2sfr!4v1679590314566!5m2!1sfr!2sfr"
+      "maplink":"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d21016.29288631625!2d2.1951705!3d48.8193629!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67b83150059b1%3A0x48f2df7c73db0ea9!2sPharmacie%20des%20Ecoles%20%2F%20Selarl%20Pharmacie%20Lemare!5e0!3m2!1sfr!2sfr!4v1679590314566!5m2!1sfr!2sfr",
+      "horaire": [
+        {
+          "lundi":"09:00 - 19:30"
+        },
+        {
+          "mardi": "09:00 - 19:30"
+        },
+        {
+          "mercredi": "09:00 - 19:30"
+        },
+        {
+          "jeudi": "09:00 - 19:30"
+        },
+        {
+          "vendredi": "09:00 - 19:30"
+        },
+        {
+          "samedi": "09:00 - 19:00"
+        },
+        {
+          "dimanche": "none"
+        }
+      ]
     }
   ],
   "Boulangeries": [
@@ -35,7 +127,30 @@
       "adresse": "1520 Av. Roger Salengro, 92370 Chaville",
       "telephone": "01.47.50.18.71",
       "site": "none",
-      "maplink":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17677.10255391474!2d2.1842736336141293!3d48.80637931869626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67b861fa67b2d%3A0xf8d67839cb9d9001!2sOlivier%20Le%20Boulanger!5e0!3m2!1sfr!2sfr!4v1679591876637!5m2!1sfr!2sfr"
+      "maplink":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17677.10255391474!2d2.1842736336141293!3d48.80637931869626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67b861fa67b2d%3A0xf8d67839cb9d9001!2sOlivier%20Le%20Boulanger!5e0!3m2!1sfr!2sfr!4v1679591876637!5m2!1sfr!2sfr",
+      "horaire": [
+        {
+          "lundi": "none"
+        },
+        {
+          "mardi": "07:00 - 19:30"
+        },
+        {
+          "mercredi": "07:00 - 19:30"
+        },
+        {
+          "jeudi": "07:00 - 19:30"
+        },
+        {
+          "vendredi": "07:00 - 19:30"
+        },
+        {
+          "samedi": "07:00 - 19:30"
+        },
+        {
+          "dimanche": "07:30 - 13:30"
+        }
+      ]
     },
     {
       "nom": "À la Pointe de Chaville",

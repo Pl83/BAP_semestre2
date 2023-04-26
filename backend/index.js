@@ -138,19 +138,3 @@ httpServer.listen(port, () => {
     console.log(`On écoute le port n°${port}`)
 });
 
-
-
-const FormData = require('form-data');
-const mailgun = require('mailgun.js');
-const formData = new FormData();
-const mg = mailgun.client({username: 'api', key: '453daca333debd5c0a433b4c4f5be001-70c38fed-ede58af7'});
-
-mg.messages.create('sandbox750f56297e3c43b8b8aec3a09616ce85.mailgun.org', {
-    from: 'Excited User <bot.coding.456@gmail.com>',
-    to: ['pierre-louis@edu.devinci.fr'],
-    subject: 'Hello',
-    text: 'Testing some Mailgun awesomeness!',
-    html: '<h1>Testing some Mailgun awesomeness!</h1>',
-})
-.then(msg => console.log(msg))
-.catch(err => console.log(err));
