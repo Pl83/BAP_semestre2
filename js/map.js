@@ -3,12 +3,12 @@
 fetch('http://localhost:3000/data')
 .then(response => response.json())
 .then(data => {
-  console.log(data)
-  console.table(data)
-  console.table(data[0])
-  console.log(" the one :  " +data)
+  //console.log(data)
+  //console.table(data)
+  //console.table(data[0])
+  //console.log(" the one :  " +data)
   // console.log(data[0])
-  console.table(data[0].Pharmacies[0].nom)
+  //console.table(data[0].Pharmacies[0].nom)
   // console.table(data[0].Pharmacies[0])
 
   let link = document.getElementById("link");
@@ -23,7 +23,14 @@ fetch('http://localhost:3000/data')
     h2.textContent = key + " ➜";
     div.appendChild(h2);
     link.appendChild(div);
-  }
+    console.log("this key is call " + key + " and here length is " + data[0][key].length);
+      for (let j = 0; j < data[0][key].length; j++) {
+        console.log(data[0][key][j].nom);
+        let p = document.createElement("p");
+        p.textContent = data[0][key][j].nom;
+        h2.insertAdjacentElement("afterend", p);
+      }
+    }
   let catego = document.querySelectorAll(".catego");
 
   catego.forEach(element => {
