@@ -51,16 +51,16 @@
       justify-content: center;
       align-items: center;
       #tennis{
-        background-image: url("images/image1.png");
+        background-image: url("img/image1.png");
         transform: translate(15%, 15%);
         z-index: 5;
       }
       #course{
-        background-image: url("images/image2.png");
+        background-image: url("img/image2.png");
         z-index: 6;
       }
       #ski{
-        background-image: url("images/image3.png");
+        background-image: url("img/image3.png");
         transform: translate(-15%, -15%);
         z-index: 7;
       }
@@ -149,7 +149,7 @@
   .backdrop{
     height: 85%;
     width: 100%;
-    background-image: url(images/paris2024.png);
+    background-image: url(img/paris2024.png);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
