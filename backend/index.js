@@ -88,9 +88,40 @@ app.get('/data', async (req, res) => {
     res.send(data);
     console.dir("intel ====================");
 });
+    // app.post('/mail', (req, res) => {
+    //     console.log(req.body);
+    //     res.send({"message":"ok"});
+
+    //     var nodemailer = require('nodemailer');
+
+    //     var transporter = nodemailer.createTransport({
+    //     service: 'gmail',
+    //     auth: {
+    //         user: 'bap.chaville@gmail.com',
+    //         pass: 'Password01$'
+    //     }
+    //     });
+
+    //     var mailOptions = {
+    //     from: 'bap.chaville@gmail.com',
+    //     to: req.body.email,
+    //     subject: 'Promotion',
+    //     text: 'That was easy!'
+    //     };
+
+    //     transporter.sendMail(mailOptions, function(error, info){
+    //     if (error) {
+    //         console.log(error);
+    //     } else {
+    //         console.log('Email sent: ' + info.response);
+    //     }
+    //     });
+    // });
 
 
 
 httpServer.listen(port, () => {
     console.log(`On écoute le port n°${port}`)
 });
+
+
