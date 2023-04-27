@@ -2,9 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
-html{
-  overflow-x: hidden;
-}
 footer {
   background-color: #174F90;
   width: 100vw;
@@ -231,6 +228,9 @@ h1.title {
   align-items: start;
   margin: 15px auto;
   justify-content: space-between;
+  border-radius: 10px;
+  padding-top: 0px;
+  background-color: royalblue;
 }
 
 .container-card {
@@ -250,7 +250,7 @@ h1.title {
   margin: 20px;
   width: 495px;
   height: 100%;
-  background-color: #903b17;
+  background-color: #174F90;
 }
 
 .container-card-data {
@@ -259,16 +259,18 @@ h1.title {
   background-color: rgba(17, 25, 40, 0.25);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
-  padding: 38px;
+  padding: 22px;
   filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
+  flex-shrink: 0;
   margin: 20px;
-  width: 35%;
-  height: 100%;
+  margin-top: 0px;
+  width: 190px;
+  height: 500px;
   background-color: #174F90;
 }
 .container-card-data .wrapper-card {
@@ -404,8 +406,9 @@ section.slider-section {
   text-align: center;
   flex-shrink: 0;
   margin: 20px;
+  margin-top: 0px;
   width: 190px;
-  height: 229px;
+  height: 500px;
   background-color: #174F90;
 }
 
