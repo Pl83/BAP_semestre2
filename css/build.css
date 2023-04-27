@@ -69,8 +69,15 @@
 #ChavilleAction #display #images .cardgang {
   height: 90%;
   width: 25%;
+  scale: 1;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 1px;
+  transition: scale 300ms ease-in-out, margin 300ms ease-in-out;
+}
+#ChavilleAction #display #images .cardgang:hover {
+  scale: 1.1;
+  margin: 30px;
 }
 
 #JouerAussi {
@@ -121,15 +128,25 @@
   font-family: "Kanit", sans-serif;
 }
 #JouerAussi .bas div button {
-  width: 250px;
-  height: 45px;
+  width: 50%;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: var(--dark-color);
   border: none;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   color: var(--gold);
-  background-color: var(--dark-color);
   font-family: "Kanit", sans-serif;
   font-size: 1.2rem;
+  padding: 2%;
+  background-image: linear-gradient(45deg, var(--gold) 50%, transparent 50%);
+  background-position: 90%;
+  background-size: 400%;
+  transition: background 300ms ease-in-out, color 300ms;
+}
+#JouerAussi .bas div button:hover {
+  color: #1B1B1B;
+  background-position: 0;
 }
 #JouerAussi .bas img {
   height: 150px;
@@ -171,11 +188,28 @@
   padding: 0 20px;
   background-color: #EFEFEF;
 }
-.Section1 .header a {
+.Section1 .header #lienIndex img {
+  width: 100px;
+}
+.Section1 .header .lien {
   text-decoration: none;
   color: var(--dark-color);
   font-family: "Poppins Medium";
   font-size: 1rem;
+  position: relative;
+}
+.Section1 .header .lien:after {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -1px;
+  transition: 0.3s;
+}
+.Section1 .header .lien:hover:after {
+  width: 100%;
 }
 .Section1 .header .liseraire {
   width: 5%;
@@ -226,7 +260,7 @@
 .Section2 {
   display: flex;
   flex-direction: column;
-  height: 150vh;
+  height: 200vh;
 }
 .Section2 .top {
   margin-top: 5%;
@@ -265,6 +299,14 @@
   font-family: "Kanit", sans-serif;
   font-size: 1.2rem;
   padding: 2%;
+  background-image: linear-gradient(45deg, var(--gold) 50%, transparent 50%);
+  background-position: 90%;
+  background-size: 400%;
+  transition: background 300ms ease-in-out, color 300ms;
+}
+.Section2 .top .pav_doc .btn_S2:hover {
+  color: #1B1B1B;
+  background-position: 0;
 }
 .Section2 .top .illu_S2 {
   width: 50%;
@@ -310,6 +352,8 @@
   width: 50%;
   padding-left: 10%;
   padding-right: 10%;
+  background-color: var(--light-color);
+  border: none;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   color: var(--dark-color);
@@ -317,6 +361,14 @@
   font-size: 1.2rem;
   padding: 2%;
   border: 2px solid var(--dark-color);
+  background-image: linear-gradient(45deg, var(--dark-color) 50%, transparent 50%);
+  background-position: 90%;
+  background-size: 400%;
+  transition: background 300ms ease-in-out, color 300ms;
+}
+.Section2 .left .pav_docL .btn_S2:hover {
+  color: var(--gold);
+  background-position: 0;
 }
 .Section2 .left .illu_S2 {
   width: 50%;
@@ -598,6 +650,11 @@ footer #footerbas p {
     display: none;
   }
 }
+@media only screen and (max-width: 458px) {
+  .Section2 {
+    height: 280vh;
+  }
+}
 #headerGame {
   height: 60vh;
   background-color: #EFEFEF;
@@ -605,6 +662,14 @@ footer #footerbas p {
 @media only screen and (max-width: 1050px) {
   #headerGame {
     height: 60%;
+  }
+}
+#headerGame .header {
+  height: 110px;
+}
+@media only screen and (max-width: 768px) {
+  #headerGame .header {
+    height: 35%;
   }
 }
 
@@ -629,7 +694,7 @@ footer #footerbas p {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  font-size: large;
+  font-size: larger;
   margin-bottom: 20px;
 }
 @media only screen and (max-width: 940px) {
@@ -645,19 +710,27 @@ footer #footerbas p {
 #Scannez div button {
   width: 250px;
   height: 45px;
+  background-color: var(--dark-color);
   border: none;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   color: var(--gold);
-  background-color: var(--dark-color);
   font-family: "Kanit", sans-serif;
   font-size: 1.2rem;
+  background-image: linear-gradient(45deg, var(--gold) 50%, transparent 50%);
+  background-position: 90%;
+  background-size: 400%;
+  transition: background 300ms ease-in-out, color 300ms;
 }
 @media only screen and (max-width: 1050px) {
   #Scannez div button {
     height: 35px;
     width: 170px;
   }
+}
+#Scannez div button:hover {
+  color: #1B1B1B;
+  background-position: 0;
 }
 #Scannez div p {
   text-align: center;
@@ -691,12 +764,17 @@ footer #footerbas p {
 }
 #cartes div {
   width: 350px;
+  height: 550px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  justify-content: start;
 }
 #cartes div span {
   font-size: larger;
+  height: 20%;
+}
+#cartes div p {
+  height: 250px;
 }
 
 /*# sourceMappingURL=build.css.map */
