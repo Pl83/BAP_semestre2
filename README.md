@@ -55,6 +55,9 @@ La V2 se trouve sur la branch "backend". Elle n'est pas en ligne car nécessité
 <li>Possibilité de rentrer son email pour obtenir un QrCode unique de promotion auprès des petits commerces de Chaville</li>
 <li>Affichage des horaires d'ouverture des magasins</li>
 
+### Dèmo V2: 
+https://www.loom.com/share/9f20ecbb7e4f42a890e6cb65986e4caa
+
 ### Instalation de la V2 et la run :
 
 `$ git clone git@github.com:Pl83/BAP_semestre2.git`
@@ -62,6 +65,8 @@ La V2 se trouve sur la branch "backend". Elle n'est pas en ligne car nécessité
 `$ git switch backend`
 
 `$ git pull `
+
+`npm i`
 
 `$ cd backend`
 
