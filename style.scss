@@ -67,8 +67,16 @@
       .cardgang {
         height: 90%;
         width: 25%;
+        scale: 1;
         background-repeat: no-repeat;
         background-size: cover;
+        margin: 1px;
+        transition: scale 300ms ease-in-out, margin 300ms ease-in-out;
+
+        &:hover {
+          scale: 1.1;
+          margin: 30px;
+        }
       }
       }
     }
@@ -123,15 +131,30 @@
         font-family: "Kanit", sans-serif;
       }
       button{
-        width: 250px;
-        height: 45px;
+        width: 50%;
+        padding-left: 10%;
+        padding-right: 10%;
+        background-color: var(--dark-color);
         border: none;
         border-top-right-radius: 20px;
         border-bottom-left-radius: 20px;
         color: var(--gold);
-        background-color: var(--dark-color);
         font-family: "Kanit", sans-serif;
         font-size: 1.2rem;
+        padding: 2%;
+
+        background: {
+          image: linear-gradient(45deg,var(--gold) 50%, transparent 50%);
+          position: 90%;
+          size: 400%;
+        }
+        transition: background  300ms ease-in-out , color 300ms;
+
+
+        &:hover {
+          color: #1B1B1B;
+          background-position: 0;
+        }
       }
     }
     img{
@@ -175,11 +198,30 @@
     align-items: center;
     padding: 0 20px;
     background-color: #EFEFEF;
-    a{
+    #lienIndex{
+      img{
+        width: 100px;
+      }
+    }
+    .lien{
         text-decoration: none;
         color: var(--dark-color);
         font-family: "Poppins Medium";
         font-size: 1rem;
+        position: relative;
+    }
+    .lien:after{
+      content: "";
+      position: absolute;
+      background-color: #000;
+      height: 3px;
+      width: 0;
+      left: 0;
+      bottom: -1px;
+      transition: 0.3s;
+    }
+    .lien:hover:after{
+      width: 100%;
     }
     .liseraire{
       width: 5%;
@@ -232,7 +274,7 @@
 .Section2{
   display: flex;
   flex-direction: column;
-  height: 150vh;
+  height: 200vh;
   .top{
     margin-top: 5%;
     display: flex;
@@ -269,6 +311,19 @@
         font-family: "Kanit", sans-serif;
         font-size: 1.2rem;
         padding: 2%;
+
+        background: {
+          image: linear-gradient(45deg,var(--gold) 50%, transparent 50%);
+          position: 90%;
+          size: 400%;
+        }
+        transition: background  300ms ease-in-out , color 300ms;
+
+
+        &:hover {
+          color: #1B1B1B;
+          background-position: 0;
+        }
       }
     }
 
@@ -318,6 +373,8 @@
         width: 50%;
         padding-left: 10%;
         padding-right: 10%;
+        background-color: var(--light-color);
+        border: none;
         border-top-right-radius: 20px;
         border-bottom-left-radius: 20px;
         color: var(--dark-color);
@@ -325,6 +382,19 @@
         font-size: 1.2rem;
         padding: 2%;
         border: 2px solid var(--dark-color);
+
+        background: {
+          image: linear-gradient(45deg,var(--dark-color) 50%, transparent 50%);
+          position: 90%;
+          size: 400%;
+        }
+        transition: background  300ms ease-in-out , color 300ms;
+
+
+        &:hover {
+          color: var(--gold);
+          background-position: 0;
+        }
       }
     }
 
@@ -559,7 +629,7 @@ footer{
     .backdrop{
     }
     .header {
-      height: 35%;
+      height: 35% ;
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -676,6 +746,13 @@ footer{
   }
 }
 
+@media only screen and (max-width: 458px) {
+  .Section2 {
+    height: 280vh;
+  }
+
+}
+
 //page game
 
 #headerGame{
@@ -685,6 +762,16 @@ footer{
   @media only screen and (max-width: 1050px) {
     height: 60%;
   }
+
+  .header{
+    height: 110px;
+
+    @media only screen and (max-width: 768px) {
+      height: 35%;
+    }
+  }
+
+
 }
 
 #Scannez{
@@ -706,7 +793,7 @@ footer{
     align-items: center;
     justify-content: center;
     gap: 20px;
-    font-size: large;
+    font-size: larger;
     margin-bottom: 20px;
 
     @media only screen and (max-width: 940px) {
@@ -719,17 +806,30 @@ footer{
     button{
       width: 250px;
       height: 45px;
+      background-color: var(--dark-color);
       border: none;
       border-top-right-radius: 20px;
       border-bottom-left-radius: 20px;
       color: var(--gold);
-      background-color: var(--dark-color);
       font-family: "Kanit", sans-serif;
       font-size: 1.2rem;
 
       @media only screen and (max-width: 1050px) {
         height: 35px;
         width: 170px;
+      }
+
+      background: {
+        image: linear-gradient(45deg,var(--gold) 50%, transparent 50%);
+        position: 90%;
+        size: 400%;
+      }
+      transition: background  300ms ease-in-out , color 300ms;
+
+
+      &:hover {
+        color: #1B1B1B;
+        background-position: 0;
       }
     }
     p{

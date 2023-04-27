@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+
 </head>
 <body>
 <section id="headerGame" class="Section1">
@@ -19,16 +21,15 @@
 
     </div>
 
-    <img src="images/Blason_PNG_Ville_de_Chaville%2015.png" alt="logo" class="logo">
+    <a id="lienIndex" href="index.html"><img src="images/Blason_PNG_Ville_de_Chaville%2015.png" alt="logo" class="logo"></a>
     <img class="burger" id="burger" src="images/flèche.png" alt="icone burger">
     <nav id="navburg">
       <ul>
-        <li><a href="#">Jeux</a></li>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">Map</a></li>
+        <li><a class="lien" href="game.html">Jeux</a></li>
+        <li><a class="lien" href="index.html">Accueil</a></li>
+        <li><a class="lien" href="#">Map</a></li>
       </ul>
     </nav>
-    <a class="retour">Retour</a>
 
 
   </div>
@@ -98,7 +99,7 @@
       </ul>
     </div>
     <div id="footerdroite">
-      <img src="images/BlasonChaville%20.png" alt="blason de Chaville">
+      <img src="images/BlasonChaville.png" alt="blason de Chaville">
       <p>X</p>
       <img src="images/LogoJo.png" alt="Logo Jeux Olympiques">
     </div>
