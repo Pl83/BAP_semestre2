@@ -157,21 +157,90 @@
       "adresse": "2061 Av. Roger Salengro, 92370 Chaville",
       "telephone": "01.47.50.17.54",
       "site": "https://m.facebook.com/pointedechaville",
-      "maplink":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17677.10255391474!2d2.1842736336141293!3d48.80637931869626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67b89e74d5505%3A0xd178c004e4bf1412!2s%C3%80%20la%20Pointe%20de%20Chaville!5e0!3m2!1sfr!2sfr!4v1679592646883!5m2!1sfr!2sfr"
+      "maplink":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17677.10255391474!2d2.1842736336141293!3d48.80637931869626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67b89e74d5505%3A0xd178c004e4bf1412!2s%C3%80%20la%20Pointe%20de%20Chaville!5e0!3m2!1sfr!2sfr!4v1679592646883!5m2!1sfr!2sfr",
+      "horaire":[
+        {
+          "lundi": "07:00 - 19:30"
+        },
+        {
+          "mardi": "07:00 - 19:30"
+        },
+        {
+          "mercredi": "07:00 - 19:30"
+        },
+        {
+          "jeudi": "none"
+        },
+        {
+          "vendredi": "07:00 - 19:30"
+        },
+        {
+          "samedi": "07:00 - 19:15"
+        },
+        {
+          "dimanche": "07:30 - 13:30"
+        }
+      ]
     },
     {
       "nom": "Boulangerie - Pâtisserie Maison Perrier",
       "adresse": "512 Av. Roger Salengro, 92370 Chaville",
       "telephone": "01.47.50.42.25",
       "site": "none",
-      "maplink":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17677.10255391474!2d2.1842736336141293!3d48.80637931869626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67b82d8a520d5%3A0xc46f27b238708c06!2sBoulangerie%20-%20P%C3%A2tisserie%20Maison%20Perrier!5e0!3m2!1sfr!2sfr!4v1679592173222!5m2!1sfr!2sfr"
+      "maplink":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17677.10255391474!2d2.1842736336141293!3d48.80637931869626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67b82d8a520d5%3A0xc46f27b238708c06!2sBoulangerie%20-%20P%C3%A2tisserie%20Maison%20Perrier!5e0!3m2!1sfr!2sfr!4v1679592173222!5m2!1sfr!2sfr",
+      "horaire":[
+        {
+          "lundi": "none"
+        },
+        {
+          "mardi": "06:30 - 19:30"
+        },
+        {
+          "mercredi": "06:30 - 19:30"
+        },
+        {
+          "jeudi": "06:30 - 19:30"
+        },
+        {
+          "vendredi": "06:30 - 19:30"
+        },
+        {
+          "samedi": "06:30 - 19:30"
+        },
+        {
+          "dimanche": "06:30 - 13:30"
+        }
+      ]
     },
     {
       "nom": "La Gache",
       "adresse": "35 Av. du Général-Leclerc, 78220 Viroflay",
       "telephone": "01.30.21.33.11",
       "site": "none",
-      "maplink":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17677.10255391474!2d2.1842736336141293!3d48.80637931869626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67d49e9e8d9a1%3A0xa0c0da048157788!2sLa%20Gache!5e0!3m2!1sfr!2sfr!4v1679592319467!5m2!1sfr!2sfr"
+      "maplink":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17677.10255391474!2d2.1842736336141293!3d48.80637931869626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67d49e9e8d9a1%3A0xa0c0da048157788!2sLa%20Gache!5e0!3m2!1sfr!2sfr!4v1679592319467!5m2!1sfr!2sfr",
+      "horaire":[
+        {
+          "lundi": "06:30 - 20:30"
+        },
+        {
+          "mardi": "none"
+        },
+        {
+          "mercredi": "06:30 - 20:30"
+        },
+        {
+          "jeudi": "06:30 - 20:30"
+        },
+        {
+          "vendredi": "06:30 - 20:30"
+        },
+        {
+          "samedi": "06:30 - 20:30"
+        },
+        {
+          "dimanche": "06:30 - 20:30"
+        }
+      ]
     }
   ],
   "Boucheries": [
@@ -180,21 +249,90 @@
       "adresse": "902 Av. Roger Salengro, 92370 Chaville",
       "telephone": "01.47.09.56.94",
       "site": "https://www.ville-chaville.fr/annuaire-de-la-ville-701/la-ferme-de-chaville-772.html?cHash=f96955d9fc43a0d565a7934db6687da3",
-      "maplink":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.342321949279!2d2.1920789!3d48.81352959999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67b847edb119b%3A0xc51113370662b5f6!2sLa%20Ferme%20de%20Chaville!5e0!3m2!1sfr!2sfr!4v1682328063139!5m2!1sfr!2sfr"
+      "maplink":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.342321949279!2d2.1920789!3d48.81352959999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67b847edb119b%3A0xc51113370662b5f6!2sLa%20Ferme%20de%20Chaville!5e0!3m2!1sfr!2sfr!4v1682328063139!5m2!1sfr!2sfr",
+      "horaire":[
+        {
+          "lundi": "06:30 - 20:30"
+        },
+        {
+          "mardi": "none"
+        },
+        {
+          "mercredi": "06:30 - 20:30"
+        },
+        {
+          "jeudi": "06:30 - 20:30"
+        },
+        {
+          "vendredi": "06:30 - 20:30"
+        },
+        {
+          "samedi": "06:30 - 20:30"
+        },
+        {
+          "dimanche": "06:30 - 20:30"
+        }
+      ]
     },
     {
       "nom": "Paul le Boucher",
       "adresse": "21 Rue des Fontaines Marivel, 92370 Chaville",
       "telephone": "01.47.50.02.99",
       "site": "https://www.facebook.com/Paul-Le-Boucher-106909511045519",
-      "maplink":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.6094857403973!2d2.1889015!3d48.808431399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67bbbe2d67175%3A0xb7bc40b08580811b!2sPaul%20le%20Boucher!5e0!3m2!1sfr!2sfr!4v1682328160934!5m2!1sfr!2sfr"
+      "maplink":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.6094857403973!2d2.1889015!3d48.808431399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67bbbe2d67175%3A0xb7bc40b08580811b!2sPaul%20le%20Boucher!5e0!3m2!1sfr!2sfr!4v1682328160934!5m2!1sfr!2sfr",
+      "horaire":[
+        {
+          "lundi": "06:30 - 20:30"
+        },
+        {
+          "mardi": "none"
+        },
+        {
+          "mercredi": "06:30 - 20:30"
+        },
+        {
+          "jeudi": "06:30 - 20:30"
+        },
+        {
+          "vendredi": "06:30 - 20:30"
+        },
+        {
+          "samedi": "06:30 - 20:30"
+        },
+        {
+          "dimanche": "06:30 - 20:30"
+        }
+      ]
     },
     {
       "nom": "Boucherie Saint Hubert",
       "adresse": "2 Rue du Pavé de Meudon, 92370 Chaville",
       "telephone": "01.74.74.30.07",
       "site": "none",
-      "maplink":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2628.029101863063!2d2.1868007!3d48.8004232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67b8b13978035%3A0xdfb11493d1ec0ad0!2sBoucherie%20Saint%20Hubert!5e0!3m2!1sfr!2sfr!4v1682328258306!5m2!1sfr!2sfr"
+      "maplink":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2628.029101863063!2d2.1868007!3d48.8004232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67b8b13978035%3A0xdfb11493d1ec0ad0!2sBoucherie%20Saint%20Hubert!5e0!3m2!1sfr!2sfr!4v1682328258306!5m2!1sfr!2sfr",
+      "horaire":[
+        {
+          "lundi": "06:30 - 20:30"
+        },
+        {
+          "mardi": "none"
+        },
+        {
+          "mercredi": "06:30 - 20:30"
+        },
+        {
+          "jeudi": "06:30 - 20:30"
+        },
+        {
+          "vendredi": "06:30 - 20:30"
+        },
+        {
+          "samedi": "06:30 - 20:30"
+        },
+        {
+          "dimanche": "06:30 - 20:30"
+        }
+      ]
     }
   ],
   "Restaurants": [
@@ -203,42 +341,180 @@
       "adresse": "15 Pl. du Marché, 92370 Chaville",
       "telephone": "01.71.22.18.75",
       "site": "http://lescanailleriesdumarche.fr/",
-      "maplink":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.606802781924!2d2.1884192!3d48.8084826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67b88a4ffb6b7%3A0xd85f708de5ea4528!2sLes%20Canailleries%20du%20March%C3%A9!5e0!3m2!1sfr!2sfr!4v1682329026652!5m2!1sfr!2sfr"
+      "maplink":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.606802781924!2d2.1884192!3d48.8084826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67b88a4ffb6b7%3A0xd85f708de5ea4528!2sLes%20Canailleries%20du%20March%C3%A9!5e0!3m2!1sfr!2sfr!4v1682329026652!5m2!1sfr!2sfr",
+      "horaire":[
+        {
+          "lundi": "06:30 - 20:30"
+        },
+        {
+          "mardi": "none"
+        },
+        {
+          "mercredi": "06:30 - 20:30"
+        },
+        {
+          "jeudi": "06:30 - 20:30"
+        },
+        {
+          "vendredi": "06:30 - 20:30"
+        },
+        {
+          "samedi": "06:30 - 20:30"
+        },
+        {
+          "dimanche": "06:30 - 20:30"
+        }
+      ]
     },
     {
       "nom": "La Pergola",
       "adresse": "15 Rte Sablée, 92370 Chaville",
       "telephone": "01.47.09.26.61",
       "site": "http://lapergola92.com/",
-      "maplink":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2628.1240457126137!2d2.1980556!3d48.798611099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67beccae044f9%3A0x842b34d9c4ea0be9!2sLa%20Pergola!5e0!3m2!1sfr!2sfr!4v1682329048173!5m2!1sfr!2sfr"
+      "maplink":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2628.1240457126137!2d2.1980556!3d48.798611099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67beccae044f9%3A0x842b34d9c4ea0be9!2sLa%20Pergola!5e0!3m2!1sfr!2sfr!4v1682329048173!5m2!1sfr!2sfr",
+      "horaire":[
+        {
+          "lundi": "06:30 - 20:30"
+        },
+        {
+          "mardi": "none"
+        },
+        {
+          "mercredi": "06:30 - 20:30"
+        },
+        {
+          "jeudi": "06:30 - 20:30"
+        },
+        {
+          "vendredi": "06:30 - 20:30"
+        },
+        {
+          "samedi": "06:30 - 20:30"
+        },
+        {
+          "dimanche": "06:30 - 20:30"
+        }
+      ]
     },
     {
       "nom": "Le Tilleli's Coffee",
       "adresse": "Av. Roger Salengro, 92370 Chaville",
       "telephone": "09.73.62.55.04",
       "site": "https://www.aubureau.fr/restaurant/?ville=AB_CHAVILLE&y_source=1_NTc2NDk4OTAtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
-      "maplink":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.305920831553!2d2.1930791999999997!3d48.81422419999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67b836558a8cd%3A0x1e51c6fff9ded96d!2sLe%20Tilleli&#39;s%20Coffee!5e0!3m2!1sfr!2sfr!4v1682329113965!5m2!1sfr!2sfr"
+      "maplink":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.305920831553!2d2.1930791999999997!3d48.81422419999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67b836558a8cd%3A0x1e51c6fff9ded96d!2sLe%20Tilleli&#39;s%20Coffee!5e0!3m2!1sfr!2sfr!4v1682329113965!5m2!1sfr!2sfr",
+      "horaire":[
+        {
+          "lundi": "06:30 - 20:30"
+        },
+        {
+          "mardi": "none"
+        },
+        {
+          "mercredi": "06:30 - 20:30"
+        },
+        {
+          "jeudi": "06:30 - 20:30"
+        },
+        {
+          "vendredi": "06:30 - 20:30"
+        },
+        {
+          "samedi": "06:30 - 20:30"
+        },
+        {
+          "dimanche": "06:30 - 20:30"
+        }
+      ]
     },
     {
       "nom": "Au Bureau Chaville",
       "adresse": "2 Parv. Robert Schuman, 92370 Chaville",
       "telephone": "01.47.50.15.39",
       "site": "none",
-      "maplink":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.350528655274!2d2.1918599999999993!3d48.813373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67bc4152f8a7b%3A0x936890482972039d!2sAu%20Bureau%20Chaville!5e0!3m2!1sfr!2sfr!4v1682329201503!5m2!1sfr!2sfr"
+      "maplink":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.350528655274!2d2.1918599999999993!3d48.813373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67bc4152f8a7b%3A0x936890482972039d!2sAu%20Bureau%20Chaville!5e0!3m2!1sfr!2sfr!4v1682329201503!5m2!1sfr!2sfr",
+      "horaire":[
+        {
+          "lundi": "06:30 - 20:30"
+        },
+        {
+          "mardi": "none"
+        },
+        {
+          "mercredi": "06:30 - 20:30"
+        },
+        {
+          "jeudi": "06:30 - 20:30"
+        },
+        {
+          "vendredi": "06:30 - 20:30"
+        },
+        {
+          "samedi": "06:30 - 20:30"
+        },
+        {
+          "dimanche": "06:30 - 20:30"
+        }
+      ]
     },
     {
       "nom": "Yamada Restaurant",
       "adresse": "585 Av. Roger Salengro, 92370 Chaville",
       "telephone": "01.47.50.16.87",
       "site": "https://yamadachaville.fr/",
-      "maplink":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.2202042644676!2d2.1942851!3d48.8158598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67b8322e1994d%3A0xb8d230960428d622!2sYamada%20Restaurant!5e0!3m2!1sfr!2sfr!4v1682329224918!5m2!1sfr!2sfr"
+      "maplink":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.2202042644676!2d2.1942851!3d48.8158598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67b8322e1994d%3A0xb8d230960428d622!2sYamada%20Restaurant!5e0!3m2!1sfr!2sfr!4v1682329224918!5m2!1sfr!2sfr",
+      "horaire":[
+        {
+          "lundi": "06:30 - 20:30"
+        },
+        {
+          "mardi": "none"
+        },
+        {
+          "mercredi": "06:30 - 20:30"
+        },
+        {
+          "jeudi": "06:30 - 20:30"
+        },
+        {
+          "vendredi": "06:30 - 20:30"
+        },
+        {
+          "samedi": "06:30 - 20:30"
+        },
+        {
+          "dimanche": "06:30 - 20:30"
+        }
+      ]
     },
     {
       "nom": "La Scampia",
       "adresse": "667 Av. Roger Salengro, 92370 Chaville",
       "telephone": "01.70.68.34.59",
       "site": "https://www.facebook.com/pizzeriachaville/",
-      "maplink":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.259787388878!2d2.1937142000000005!3d48.8151045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67b6fe4e0c8d5%3A0xf62cb3aa1d0fbb2a!2sLa%20Scampia!5e0!3m2!1sfr!2sfr!4v1682329276972!5m2!1sfr!2sfr"
+      "maplink":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.259787388878!2d2.1937142000000005!3d48.8151045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67b6fe4e0c8d5%3A0xf62cb3aa1d0fbb2a!2sLa%20Scampia!5e0!3m2!1sfr!2sfr!4v1682329276972!5m2!1sfr!2sfr",
+      "horaire":[
+        {
+          "lundi": "06:30 - 20:30"
+        },
+        {
+          "mardi": "none"
+        },
+        {
+          "mercredi": "06:30 - 20:30"
+        },
+        {
+          "jeudi": "06:30 - 20:30"
+        },
+        {
+          "vendredi": "06:30 - 20:30"
+        },
+        {
+          "samedi": "06:30 - 20:30"
+        },
+        {
+          "dimanche": "06:30 - 20:30"
+        }
+      ]
     }
   ]
 }
