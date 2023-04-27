@@ -52,16 +52,16 @@
       justify-content: center;
       align-items: center;
       #tennis{
-        background-image: url("/img/image1.png");
+        background-image: url("../img/image1.png");
         transform: translate(15%, 15%);
         z-index: 5;
       }
       #course{
-        background-image: url("/img/image2.png");
+        background-image: url("../img/image2.png");
         z-index: 6;
       }
       #ski{
-        background-image: url("/img/image3.png");
+        background-image: url("../img/image3.png");
         transform: translate(-15%, -15%);
         z-index: 7;
       }
