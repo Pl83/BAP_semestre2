@@ -862,12 +862,16 @@ footer{
   }
   div{
     width: 350px;
+    height: 550px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
-
+    justify-content: start;
     span{
       font-size: larger;
+      height: 20%;
+    }
+    p{
+      height: 250px;
     }
   }
 }

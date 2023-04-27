@@ -764,12 +764,17 @@ footer #footerbas p {
 }
 #cartes div {
   width: 350px;
+  height: 550px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  justify-content: start;
 }
 #cartes div span {
   font-size: larger;
+  height: 20%;
+}
+#cartes div p {
+  height: 250px;
 }
 
 /*# sourceMappingURL=build.css.map */
