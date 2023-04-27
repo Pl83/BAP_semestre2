@@ -12,6 +12,7 @@ footer {
   align-items: center;
   justify-content: space-around;
   gap: 20px;
+  padding-top: 10px;
 }
 footer div.list-infos {
   padding: 20px auto;
@@ -210,12 +211,13 @@ h1.title {
 }
 .container.data .wrapper-card h1 {
   font-family: "Righteous", cursive;
-  font-size: 50px;
+  font-size: 35px;
   line-height: 29px;
   text-align: center;
   color: #FFFFFF;
   margin-bottom: 10px;
   padding-bottom: 50px;
+  letter-spacing: 5px;
 }
 
 .container {
