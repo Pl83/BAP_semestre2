@@ -42,7 +42,7 @@ async function zad() {
         await client.connect();
       // database and collection code goes here
         const db = client.db("maps");
-        const coll = db.collection("commerce");
+        const coll = db.collection("commerces");
         console.log("Connected to database");
       // find code goes here
       // iterate code goes here
